@@ -862,7 +862,7 @@ p {
     from(#0000CA),
     to(#483afc)
   );
-  background: linear-gradient(to right, #0000CA, #483afc);
+  background: linear-gradient(to right, #0000CA, #0000CA);
   opacity: 0.85;
   position: absolute;
   top: 0;
