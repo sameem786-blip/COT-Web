@@ -38,32 +38,22 @@ class Section extends Component {
               <Col lg="5">
                 <div className="hero-content">
                   <h1 className="text-dark hero-1-title line-height-1_4 mb-4">
-                    Get Your Professional Website Done With{" "}
-                    <span className="text-purple">Modzy</span>
+                    Get Your Professional Project Done With{" "}
+                    <span className="text-purple">COT</span>
                   </h1>
                   <p className="text-muted f-15">
                     On the other hand as we denounce with righteous indignation
                     and dislike men who are beguiled.
                   </p>
-                  <Link to="#" className="btn btn-purple mt-4">
-                    Get Started
-                  </Link>
+                  
                 </div>
               </Col>
               <div className="col-lg-5 offset-lg-2 text-center">
                 <div className="text-center mt-5 mt-lg-0">
-                  <Link
-                    to="#"
-                    onClick={this.callModal}
-                    className="video-play-icon ml-lg-5"
-                  >
-                    <i className="remixicon-play-fill" />
-                  </Link>
+                  
                 </div>
               </div>
             </Row>
-            {/* Render ModalSection Component for Modal */}
-            <ModalSection ref="child" channel="vimeo" videoId="99025203" />
           </Container>
         </section>
 

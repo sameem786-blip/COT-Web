@@ -126,7 +126,7 @@ p {
 .navbar-light .navbar-nav li.active a,
 .navbar-light .navbar-nav li a:hover,
 .navbar-light .navbar-nav li a:active {
-  color: #6d62fd !important;
+  color: #0000CA !important;
 }
 
 .navbar-light .navbar-nav li.active a:after,
@@ -135,7 +135,7 @@ p {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background-color: #6d62fd;
+  background-color: #0000CA;
 }
 
 .nav-sticky.navbar-custom {
@@ -169,7 +169,7 @@ p {
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-  color: #6d62fd !important;
+  color: #0000CA !important;
 }
 
 .nav-sticky.navbar-custom .navbar-nav li.active a:after,
@@ -178,7 +178,7 @@ p {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background: #6d62fd !important;
+  background: #0000CA !important;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -195,7 +195,7 @@ p {
     text-decoration: none;
   }
   .navbar-custom .navbar-nav .nav-item .nav-link:after {
-    background: #6d62fd;
+    background: #0000CA;
   }
   .navbar-custom .logo-sticky .logo-dark {
     display: inline-block;
@@ -212,7 +212,7 @@ p {
   .nav-sticky.navbar-custom .navbar-nav li.active a,
   .nav-sticky.navbar-custom .navbar-nav li a:hover,
   .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: #6d62fd !important;
+    color: #0000CA !important;
   }
 }
 
@@ -547,8 +547,8 @@ p {
 }
 
 .btn-purple {
-  background-color: #6d62fd !important;
-  border: 1px solid #6d62fd !important;
+  background-color: #0000CA !important;
+  border: 1px solid #0000CA !important;
   -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   color: #ffffff;
@@ -563,15 +563,15 @@ p {
 }
 
 .btn-outline-purple {
-  border: 1px solid #6d62fd !important;
-  color: #6d62fd;
+  border: 1px solid #0000CA !important;
+  color: #0000CA;
 }
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus,
 .btn-outline-purple.active {
-  background-color: #6d62fd !important;
-  border: 1px solid #6d62fd !important;
+  background-color: #0000CA !important;
+  border: 1px solid #0000CA !important;
   -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
   box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
   color: #ffffff;
@@ -694,7 +694,7 @@ p {
 }
 
 .text-purple {
-  color: #6d62fd !important;
+  color: #0000CA !important;
 }
 
 .text-black {
@@ -746,7 +746,7 @@ p {
 }
 
 .bg-purple {
-  background-color: #6d62fd !important;
+  background-color: #0000CA !important;
 }
 
 .bg-black {
@@ -762,10 +762,10 @@ p {
     linear,
     left top,
     right top,
-    from(#6d62fd),
+    from(#0000CA),
     to(#483afc)
   );
-  background: linear-gradient(to right, #6d62fd, #483afc);
+  background: linear-gradient(to right, #0000CA, #483afc);
 }
 
 .section {
@@ -859,10 +859,10 @@ p {
     linear,
     left top,
     right top,
-    from(#6d62fd),
+    from(#0000CA),
     to(#483afc)
   );
-  background: linear-gradient(to right, #6d62fd, #483afc);
+  background: linear-gradient(to right, #0000CA, #483afc);
   opacity: 0.85;
   position: absolute;
   top: 0;
@@ -898,7 +898,7 @@ p {
 
 .hero-1-bg .video-play-icon:hover {
   background: #ffffff;
-  color: #6d62fd;
+  color: #0000CA;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
@@ -1116,7 +1116,7 @@ p {
 
 .hero-5-bg .img-video .video-icon .play-icon:hover {
   background: #ffffff;
-  color: #6d62fd;
+  color: #0000CA;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1171,10 +1171,10 @@ p {
     linear,
     left top,
     right top,
-    from(#6d62fd),
+    from(#0000CA),
     to(#5a4efd)
   );
-  background: linear-gradient(to right, #6d62fd, #5a4efd);
+  background: linear-gradient(to right, #0000CA, #5a4efd);
 }
 
 .service-box:hover .service-icon,
@@ -1236,7 +1236,7 @@ p {
 }
 
 .testi-content:hover {
-  border-bottom: 2px solid #6d62fd;
+  border-bottom: 2px solid #0000CA;
   -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
 }
@@ -1249,7 +1249,7 @@ p {
 }
 
 .testi-content:hover .testi-icon {
-  color: #6d62fd;
+  color: #0000CA;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -1262,7 +1262,7 @@ p {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   width: 20px;
   height: 4px;
-  background-color: #6d62fd;
+  background-color: #0000CA;
 }
 
 .owl-carousel .owl-item img {
@@ -1272,7 +1272,7 @@ p {
 .owl-dot.active span {
   width: 20px !important;
   height: 4px !important;
-  background-color: #6d62fd !important;
+  background-color: #0000CA !important;
 }
 
 .owl-dot span {
@@ -1316,10 +1316,10 @@ p {
     linear,
     left top,
     right top,
-    from(#6d62fd),
+    from(#0000CA),
     to(#483afc)
   );
-  background: linear-gradient(to right, #6d62fd, #483afc);
+  background: linear-gradient(to right, #0000CA, #483afc);
   padding: 8px 4px 16px 4px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
@@ -1341,10 +1341,10 @@ p {
     linear,
     left top,
     right top,
-    from(#6d62fd),
+    from(#0000CA),
     to(#483afc)
   ) !important;
-  background: linear-gradient(to right, #6d62fd, #483afc) !important;
+  background: linear-gradient(to right, #0000CA, #483afc) !important;
   color: #ffffff !important;
 }
 
@@ -1401,7 +1401,7 @@ p {
 }
 
 .testi-content-2 .texti-2-box .testi-2-icon {
-  color: #6d62fd;
+  color: #0000CA;
 }
 
 .testi-content-2 .texti-2-box:after {
@@ -1436,7 +1436,7 @@ p {
 }
 
 .testi-content-2:hover .texti-2-box {
-  background: #6d62fd;
+  background: #0000CA;
   -webkit-box-shadow: 0 4px 20px rgba(109, 98, 253, 0.3);
   box-shadow: 0 4px 20px rgba(109, 98, 253, 0.3);
 }
@@ -1450,7 +1450,7 @@ p {
 }
 
 .testi-content-2:hover .texti-2-box:after {
-  background: #6d62fd;
+  background: #0000CA;
 }
 
 .testi-content-2:hover .testi-img-content img {
@@ -1523,7 +1523,7 @@ p {
     height: auto !important;
   }
   .hero-1-bg .video-play-icon {
-    background: #6d62fd !important;
+    background: #0000CA !important;
     -webkit-box-shadow: 0 0 5px 8px rgba(109, 98, 253, 0.2) !important;
     box-shadow: 0 0 5px 8px rgba(109, 98, 253, 0.2) !important;
     color: #ffffff !important;
