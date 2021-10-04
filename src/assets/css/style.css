@@ -884,7 +884,7 @@ p {
 
 .form-submit{
   margin-top: 50px;
-  margin-left: 46%;
+  margin-left: 44%;
   cursor: pointer;
   padding: 12px 32px;
   font-size: 15px;
@@ -893,6 +893,7 @@ p {
   -webkit-box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
   box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
   color: #ffffff;
+  border-radius: 2px;
 }
 
 
@@ -1026,15 +1027,15 @@ p {
   margin: 0px auto;
 }
 
-.row{
+/* .row{
   margin-left: 50px;
-}
+} */
 
 .input{
   width: 80%;
-  margin-left: 30px;
+  margin-left: 40px;
   border-color: transparent;
-  border-bottom-color: rgb(224, 199, 199);
+  border-bottom-color: white;
   background: transparent;
   margin-top: 28px;
   border-bottom-width: 1px;
@@ -1047,6 +1048,9 @@ p {
   color: white;
 }
 
+.input:focus::placeholder {
+  color: transparent;
+}
 .message{
   height: 200px;
 }
@@ -1580,6 +1584,19 @@ p {
   .cta-content {
     text-align: center !important;
   }
+  .form-submit{
+    margin-top: 50px;
+    margin-left: 35%;
+    cursor: pointer;
+    padding: 12px 32px;
+    font-size: 15px;
+    background-color: #2b53e1 !important;
+    border: 1px solid #2b53e1 !important;
+    -webkit-box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
+    box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
+    color: #ffffff;
+    border-radius: 2px;
+  }
   .cta-content .cta-btn {
     text-align: center !important;
   }
@@ -1611,5 +1628,6 @@ p {
     left: 0;
     margin: 0 auto;
   }
+  
 }
 /*# sourceMappingURL=style.css.map */

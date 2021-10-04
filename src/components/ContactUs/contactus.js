@@ -18,6 +18,7 @@ class ContactUs extends Component {
           <SectionTitle
             title='Request A Quote'
             description='Please feel free to contact us through the form below.'
+            color="text-white"
           />
           <div className='form-container'>
             <form onSubmit={this.submitForm}>
