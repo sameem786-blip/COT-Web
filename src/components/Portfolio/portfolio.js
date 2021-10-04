@@ -4,57 +4,77 @@ import { Container, Row, Col } from "reactstrap";
 //Import Section Title
 import SectionTitle from "../Common/SectionTitle";
 
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
 class Portfolio extends Component {
-  pricingPlan1 = {
-    pricings: [
+  Project1 = {
+    details: [
       {
         id: 1,
-        title: "Free",
-        price: "8.20",
+        price: "Recruiting App",
         duration: "month",
         currency: "$",
         features: {
-          bandwith: "1GB",
-          onlinespace: "500MB",
+          Responsibilities: "Mobile Development | UI/UX",
+          type: "Mobile App",
           support: "No",
         },
       },
     ],
   };
 
-  pricingPlan2 = {
-    pricings: [
+  Project2 = {
+    details: [
       {
-        id: 1,
-        title: "-20%",
-        price: "49.70",
-        currency: "$",
+        id: 2,
+        price: "Stream+",
         duration: "month",
-        features: {
-          bandwith: "1.5GB",
-          onlinespace: "1GB",
-          support: "Yes",
-        },
-      },
-    ],
-  };
-
-  pricingPlan3 = {
-    pricings: [
-      {
-        id: 1,
-        title: "-50%",
-        price: "99.9",
         currency: "$",
-        duration: "month",
         features: {
-          bandwith: "2GB",
-          onlinespace: "2GB",
+          Responsibilities: "Mobile Development | UI/UX",
+          type: "Mobile App",
           support: "No",
         },
       },
     ],
   };
+
+  Project3 = {
+    details: [
+      {
+        id: 3,
+        price: "Freelance",
+        duration: "month",
+        currency: "$",
+        features: {
+          Responsibilities: "Mobile Development | UI/UX",
+          type: "Mobile App",
+          support: "No",
+        },
+      },
+    ],
+  };
+
+  state = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      960: {
+        items: 3,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  }
+
+  
 
   render() {
     return (
@@ -63,34 +83,43 @@ class Portfolio extends Component {
         <section className='section bg-light' id='portfolio'>
           <Container>
             <SectionTitle
-              title=' Pricing Plans'
+              title='Portfolio'
               description='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
               odit aut fugit sed consequuntur as sequi nesciunt.'
             />
 
             <Row>
-              {this.pricingPlan1.pricings.map((pricingPlan1, key) => (
-                <Col lg={4} key={pricingPlan1.currency}>
+            <OwlCarousel
+                className='owl-theme text-center'
+                items={2}
+                loop={true}
+                margin={10}
+                nav={false}
+                dots={true}
+                autoplay={true}
+                responsive={this.state.responsive}
+                autoplayHoverPause={true}
+                autoplayTimeout={2500}
+              >
+              {this.Project1.details.map((Project1, key) => (
+                <Col lg={4} key={Project1.currency}>
                   <div
                     className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={pricingPlan1.id}
+                    key={Project1.id}
                   >
                     <div className='mt-4 mb-5'>
                       <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'>{pricingPlan1.currency} </sup>
-                      {pricingPlan1.price}
-                      <sub className='h5'>/{pricingPlan1.duration}*</sub>
+                      <sup className='h5'> </sup>
+                      {Project1.price}
+                      <sub className='h5'></sub>
                     </h2>
                     <p className='text-muted'>
-                      Onlinespace : {pricingPlan1.features.onlinespace}
+                      {Project1.features.type}
                     </p>
                     <p className='text-muted'>
-                      Bandwidth : {pricingPlan1.features.bandwith}
-                    </p>
-                    <p className='text-muted'>
-                      Support : {pricingPlan1.features.support}
+                      {Project1.features.Responsibilities}
                     </p>
                     <button
                       type='button'
@@ -102,62 +131,25 @@ class Portfolio extends Component {
                 </Col>
               ))}
 
-              {this.pricingPlan2.pricings.map((pricingPlan2, key) => (
-                <Col lg={4} key={pricingPlan2.id}>
-                  <div className='pricing-box active text-center bg-white p-5 mt-4 position-relative'>
-                    <div className='ribbon'>
-                      <p className='mb-0 f-12 font-weight-medium text-white'>
-                        {pricingPlan2.title}
-                      </p>
-                    </div>
+              {this.Project2.details.map((Project2, key) => (
+                <Col lg={4} key={Project2.currency}>
+                  <div
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    key={Project2.id}
+                  >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-half-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'>{pricingPlan2.currency} </sup>
-                      {pricingPlan2.price}
-                      <sub className='h5'>/{pricingPlan2.duration}*</sub>
+                      <sup className='h5'> </sup>
+                      {Project2.price}
+                      <sub className='h5'></sub>
                     </h2>
                     <p className='text-muted'>
-                      Onlinespace : {pricingPlan2.features.onlinespace}
+                      {Project2.features.type}
                     </p>
                     <p className='text-muted'>
-                      Bandwidth : {pricingPlan2.features.bandwith}
-                    </p>
-                    <p className='text-muted'>
-                      Support : {pricingPlan2.features.support}
-                    </p>
-                    <button type='button' className='btn btn-purple mt-4'>
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-
-              {this.pricingPlan3.pricings.map((pricingPlan3, key) => (
-                <Col lg={4} key={pricingPlan3.id}>
-                  <div className='pricing-box text-center bg-white p-5 mt-4 position-relative'>
-                    <div className='ribbon'>
-                      <p className='mb-0 f-12 font-weight-medium text-white'>
-                        {pricingPlan3.title}
-                      </p>
-                    </div>
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-fill h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'>{pricingPlan3.currency} </sup>
-                      {pricingPlan3.price}
-                      <sub className='h5'>/{pricingPlan3.duration}*</sub>
-                    </h2>
-                    <p className='text-muted'>
-                      Onlinespace : {pricingPlan3.features.onlinespace}
-                    </p>
-                    <p className='text-muted'>
-                      Bandwidth : {pricingPlan3.features.bandwith}
-                    </p>
-                    <p className='text-muted'>
-                      Support : {pricingPlan3.features.support}
+                      {Project2.features.Responsibilities}
                     </p>
                     <button
                       type='button'
@@ -168,6 +160,36 @@ class Portfolio extends Component {
                   </div>
                 </Col>
               ))}
+              {this.Project3.details.map((Project3, key) => (
+                <Col lg={4} key={Project3.currency}>
+                  <div
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    key={Project3.id}
+                  >
+                    <div className='mt-4 mb-5'>
+                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                    </div>
+                    <h2 className='text-dark font-weight-medium mb-5'>
+                      <sup className='h5'> </sup>
+                      {Project3.price}
+                      <sub className='h5'></sub>
+                    </h2>
+                    <p className='text-muted'>
+                      {Project3.features.type}
+                    </p>
+                    <p className='text-muted'>
+                      {Project3.features.Responsibilities}
+                    </p>
+                    <button
+                      type='button'
+                      className='btn btn-outline-purple mt-4'
+                    >
+                      Choose this plan
+                    </button>
+                  </div>
+                </Col>
+              ))}
+              </OwlCarousel>
             </Row>
           </Container>
         </section>
