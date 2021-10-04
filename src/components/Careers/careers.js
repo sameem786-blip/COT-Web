@@ -102,9 +102,9 @@ class Careers extends Component {
             <div className='row mt-4'>
               <OwlCarousel
                 className='owl-theme client-images text-center'
-                items={2}
+                items={3}
                 loop={true}
-                margin={10}
+                margin={0}
                 nav={false}
                 dots={true}
                 autoplay={true}

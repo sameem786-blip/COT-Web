@@ -10,7 +10,7 @@ class Pricing extends Component {
       {
         id: 1,
         title: "Free",
-        price: "8.20",
+        price: "Recruiting App",
         duration: "month",
         currency: "$",
         features: {
@@ -81,7 +81,7 @@ class Pricing extends Component {
                     <h2 className="text-dark font-weight-medium mb-5">
                       <sup className="h5">{pricingPlan1.currency} </sup>
                       {pricingPlan1.price}
-                      <sub className="h5">/{pricingPlan1.duration}*</sub>
+                      <sub className="h5"></sub>
                     </h2>
                     <p className="text-muted">
                       Onlinespace : {pricingPlan1.features.onlinespace}

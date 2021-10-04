@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import SectionTitle from "../Common/SectionTitle";
 
 //Import Images
-import img1 from "../../assets/images/features-img-1.png";
+import img1 from "../../assets/images/aboutus.png";
 
 class Aboutus extends Component {
   render() {
@@ -15,12 +15,12 @@ class Aboutus extends Component {
         <section className='section bg-light position-relative' id='aboutus'>
           <Container>
             <SectionTitle
-              title='Our Features'
+              title='About Us'
               description='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.'
             />
 
             <Row className='align-items-center'>
-              <Col lg='6'>
+              <Col lg='5'>
                 <div className='features-img mt-4'>
                   <img
                     src={img1}
@@ -34,18 +34,16 @@ class Aboutus extends Component {
                 <div className='pr-lg-5 mt-4'>
                   <h4 className='line-height-1_6 text-dark mb-4'>
                     Our Vision is to Build Successful{" "}
-                    <span className='font-weight-600'>Business Solutions.</span>
+                    <span className='font-weight-600'>Projects</span>
                   </h4>
                   <p className='text-muted mb-4 f-15'>
-                    I must explain to a you how sitye all this mistaken idea of
-                    denouncing pleasure and praising pain was born and I will
-                    give you a complete account of the system expound.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.
                   </p>
 
-                  <Link to='#' className='text-purple f-17'>
+                  {/* <Link to='#' className='text-purple f-17'>
                     Know more
                     <span className='ml-3 pt-1 right-icon h4'>→</span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </Row>

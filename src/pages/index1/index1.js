@@ -66,7 +66,7 @@ class Index1 extends Component {
         <Aboutus />
 
         {/* import Achievement */}
-        <Achievement />
+        {/* <Achievement /> */}
 
         {/* import Pricing */}
         <Portfolio />
