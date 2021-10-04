@@ -678,7 +678,7 @@ p {
 }
 
 .text-dark {
-  color: #343a40 !important;
+  color: black !important;
 }
 
 .text-muted {
@@ -881,6 +881,26 @@ p {
   width: 100%;
 }
 
+.form-submit{
+  margin-top: 50px;
+  margin-left: 46%;
+  padding: 12px 32px;
+  border: 1px solid;
+  font-size: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: #2b53e1 !important;
+  border: 1px solid #2b53e1 !important;
+  -webkit-box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
+  box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
+  color: #ffffff;
+}
+.form-submit:hover{
+  background-color: white;
+}
+
 .hero-1-bg .video-play-icon {
   height: 75px;
   width: 75px;
@@ -1009,6 +1029,31 @@ p {
   position: relative;
   max-width: 600px;
   margin: 0px auto;
+}
+
+.row{
+  margin-left: 50px;
+}
+
+.input{
+  width: 80%;
+  margin-left: 30px;
+  border-color: transparent;
+  border-bottom-color: rgb(224, 199, 199);
+  background: transparent;
+  margin-top: 28px;
+  border-bottom-width: 1px;
+  outline: none;
+  color: white;
+
+}
+
+.input::placeholder{
+  color: white;
+}
+
+.message{
+  height: 200px;
 }
 
 .hero-4-bg .subcribe-form input {
