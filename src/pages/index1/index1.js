@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import NavbarPage from "../../components/Navbar/Navbar_Page";
 import Section from "./section";
 import Services from "../../components/Services/services";
-import Features from "../../components/Features/features";
+import Aboutus from "../../components/Aboutus/aboutus";
 import Achievement from "../../components/Achievement/achievements";
-import Clients from "../../components/Clients/clients";
-import Pricing from "../../components/Pricing/pricing";
+import Careers from "../../components/Careers/careers";
+import Portfolio from "../../components/Portfolio/portfolio";
 import ContactUs from "../../components/ContactUs/contactus";
 import Footer from "../../components/Footer/footer";
 
@@ -16,11 +16,14 @@ class Index1 extends Component {
       pos: document.documentElement.scrollTop,
       imglight: false,
       navClass: "",
+      isStickyNav: true,
     };
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.scrollNavigation, true);
+
+    this.scrollNavigation();
   }
 
   componentWillUnmount() {
@@ -32,10 +35,13 @@ class Index1 extends Component {
 
     if (scrollup > this.state.pos) {
       this.setState({ navClass: "darkheader", imglight: false });
+      this.setState({ isStickyNav: false });
     } else if (window.innerWidth <= 768) {
       this.setState({ navClass: "darkheader", imglight: false });
+      this.setState({ isStickyNav: false });
     } else {
-      this.setState({ navClass: "", imglight: false });
+      this.setState({ navClass: "", imglight: true });
+      this.setState({ isStickyNav: true });
     }
   };
 
@@ -47,6 +53,7 @@ class Index1 extends Component {
         <NavbarPage
           navclass={this.state.navClass}
           imglight={this.state.imglight}
+          isStickyNav={this.state.isStickyNav}
         />
 
         {/* import section */}
@@ -56,16 +63,16 @@ class Index1 extends Component {
         <Services />
 
         {/* import Features */}
-        <Features />
+        <Aboutus />
 
         {/* import Achievement */}
         <Achievement />
 
-        {/* import Clients */}
-        <Clients />
-
         {/* import Pricing */}
-        <Pricing />
+        <Portfolio />
+
+        {/* import Clients */}
+        <Careers />
 
         {/* import ContactUs */}
         <ContactUs />

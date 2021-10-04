@@ -27,9 +27,10 @@ class NavbarPage extends Component {
       navItems: [
         { id: 1, idnm: "home", navheading: "Home" },
         { id: 2, idnm: "service", navheading: "Services" },
-        { id: 3, idnm: "features", navheading: "Features" },
-        { id: 4, idnm: "client", navheading: "Clients" },
-        { id: 5, idnm: "pricing", navheading: "Pricing" },
+        { id: 3, idnm: "aboutus", navheading: "About Us" },
+        { id: 4, idnm: "portfolio", navheading: "Portfolio" },
+        { id: 5, idnm: "careers", navheading: "Careers" },
+        { id: 6, idnm: "contactus", navheading: "Contact Us" },
       ],
       isOpen: false,
       topPos: "0",
@@ -70,7 +71,7 @@ class NavbarPage extends Component {
   }
 
   toggleLine() {
-    this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   }
 
   toggle = async () => {
@@ -79,7 +80,7 @@ class NavbarPage extends Component {
 
   render() {
     //Store all Navigationbar Id into TargetID variable(Used for Scrollspy)
-    let targetId = this.state.navItems.map((item) => {
+    let targetId = this.state.navItems.map(item => {
       return item.idnm;
     });
     return (
@@ -92,43 +93,43 @@ class NavbarPage extends Component {
                   ? `sticky sticky-light`
                   : ` navbar-light`
               }`}
-              id="navbar"
+              id='navbar'
               style={{ top: this.state.topPos }}
             >
               <Container>
-                <NavbarBrand href="/" className="logo">
+                <NavbarBrand href='/' className='logo'>
                   <img
                     src={this.props.imglight ? logolight : logodark}
-                    alt=""
-                    className="logo-light"
+                    alt=''
+                    className='logo-light'
                     height={32}
                   />
                 </NavbarBrand>
 
                 <NavbarToggler
-                  className="navbar-toggler"
-                  type="button"
-                  aria-label="Toggle navigation"
+                  className='navbar-toggler'
+                  type='button'
+                  aria-label='Toggle navigation'
                   onClick={this.toggle}
                 >
-                  <i className="remixicon-menu-fill" />
+                  <i className='remixicon-menu-fill' />
                 </NavbarToggler>
                 <Collapse
-                  id="navbarCollapse"
+                  id='navbarCollapse'
                   isOpen={this.state.isOpenMenu}
                   navbar
                 >
                   <ScrollspyNav
                     scrollTargetIds={targetId}
-                    scrollDuration="150"
-                    headerBackground="false"
-                    activeNavClass="active"
+                    scrollDuration='150'
+                    headerBackground='false'
+                    activeNavClass='active'
                     navCenterClass={this.state.navCenterClass}
                   >
                     <Nav
                       navbar
-                      className="navbar-nav mx-auto navbar-center"
-                      id="mySidenav"
+                      className='navbar-nav mx-auto navbar-center'
+                      id='mySidenav'
                     >
                       {this.state.navItems.map((item, key) => (
                         <NavItem
@@ -139,7 +140,7 @@ class NavbarPage extends Component {
                               : "nav-item"
                           }
                         >
-                          <NavLink href={"#" + item.idnm} className="nav-link">
+                          <NavLink href={"#" + item.idnm} className='nav-link'>
                             {" "}
                             {item.navheading}
                           </NavLink>
@@ -147,22 +148,22 @@ class NavbarPage extends Component {
                       ))}
                     </Nav>
                   </ScrollspyNav>
-                  <ul className="navbar-nav">
-                    <li className="nav-item">
-                      <Link to="#" className="nav-link">
-                        <i className="remixicon-facebook-line f-16" />
+                  <ul className='navbar-nav'>
+                    <li className='nav-item'>
+                      <Link to='#' className='nav-link'>
+                        <i className='remixicon-facebook-line f-16' />
                       </Link>
                     </li>
 
-                    <li className="nav-item">
-                      <Link to="#" className="nav-link">
-                        <i className="remixicon-twitter-line f-16" />
+                    <li className='nav-item'>
+                      <Link to='#' className='nav-link'>
+                        <i className='remixicon-twitter-line f-16' />
                       </Link>
                     </li>
 
-                    <li className="nav-item">
-                      <Link to="#" className="nav-link">
-                        <i className="remixicon-instagram-line f-16" />
+                    <li className='nav-item'>
+                      <Link to='#' className='nav-link'>
+                        <i className='remixicon-instagram-line f-16' />
                       </Link>
                     </li>
                   </ul>
