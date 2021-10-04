@@ -109,6 +109,7 @@ p {
 .navbar-light {
   background-color: #ffffff;
   border-bottom: 1px solid #f2f2f2;
+  color: #0000CA;
 }
 
 .navbar-light .nav-link:after {
@@ -884,22 +885,16 @@ p {
 .form-submit{
   margin-top: 50px;
   margin-left: 46%;
+  cursor: pointer;
   padding: 12px 32px;
-  border: 1px solid;
   font-size: 15px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border-radius: 3px;
-  font-weight: 500;
   background-color: #2b53e1 !important;
   border: 1px solid #2b53e1 !important;
   -webkit-box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
   box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
   color: #ffffff;
 }
-.form-submit:hover{
-  background-color: white;
-}
+
 
 .hero-1-bg .video-play-icon {
   height: 75px;

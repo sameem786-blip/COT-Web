@@ -25,12 +25,11 @@ class NavbarPage extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "service", navheading: "Services" },
-        { id: 3, idnm: "aboutus", navheading: "About Us" },
-        { id: 4, idnm: "portfolio", navheading: "Portfolio" },
-        { id: 5, idnm: "careers", navheading: "Careers" },
-        { id: 6, idnm: "contactus", navheading: "Contact Us" },
+        { id: 1, idnm: "service", navheading: "Services" },
+        { id: 2, idnm: "aboutus", navheading: "About Us" },
+        { id: 3, idnm: "portfolio", navheading: "Portfolio" },
+        { id: 4, idnm: "careers", navheading: "Careers" },
+        { id: 5, idnm: "contactus", navheading: "Contact Us" },
       ],
       isOpen: false,
       topPos: "0",
@@ -98,12 +97,7 @@ class NavbarPage extends Component {
             >
               <Container>
                 <NavbarBrand href='/' className='logo'>
-                  <img
-                    src={this.props.imglight ? logolight : logodark}
-                    alt=''
-                    className='logo-light'
-                    height={32}
-                  />
+                  <h5>Computing Of Tomorrow</h5>
                 </NavbarBrand>
 
                 <NavbarToggler
