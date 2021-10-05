@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Image
-import heroBgImg from "../../assets/images/hero-4-img.png";
+import heroBgImg from "../../assets/images/home.png";
 import googleImg from "../../assets/images/google-img.png";
 import bottomShap from "../../assets/images/home-4-bottom-shape.png";
 
@@ -38,7 +38,7 @@ class Section extends Component {
                 </p>
               </Col>
               <div className='col-lg-6 offset-lg-1'>
-                <div className='hero-4-img mt-5 mt-lg-0'>
+                <div className='home mt-5 mt-lg-0'>
                   <img
                     src={heroBgImg}
                     alt='hero-img'
