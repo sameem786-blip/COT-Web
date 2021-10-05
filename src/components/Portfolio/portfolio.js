@@ -100,6 +100,7 @@ class Portfolio extends Component {
           Responsibilities: "Web Development | UI/UX",
           type: "Website",
           support: "No",
+          
         },
       },
     ],
@@ -157,7 +158,7 @@ class Portfolio extends Component {
                     key={Project1.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
@@ -187,7 +188,7 @@ class Portfolio extends Component {
                     key={Project2.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
@@ -216,7 +217,7 @@ class Portfolio extends Component {
                     key={Project3.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
@@ -245,7 +246,7 @@ class Portfolio extends Component {
                     key={Project4.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
@@ -275,7 +276,7 @@ class Portfolio extends Component {
                     key={Project5.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
@@ -305,7 +306,7 @@ class Portfolio extends Component {
                     key={Project6.id}
                   >
                     <div className='mt-4 mb-5'>
-                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
                     </div>
                     <h2 className='text-dark font-weight-medium mb-5'>
                       <sup className='h5'> </sup>
