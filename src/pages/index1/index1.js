@@ -59,23 +59,33 @@ class Index1 extends Component {
         {/* import section */}
         <Section />
 
-        {/* import services */}
+        <Aboutus />
+
+        <ContactUs />
+
+        <Portfolio />
+
+        <Careers />
+
         <Services />
 
+        {/* import services */}
+        
+
         {/* import Features */}
-        <Aboutus />
+        
 
         {/* import Achievement */}
         {/* <Achievement /> */}
 
         {/* import Pricing */}
-        <Portfolio />
+        
 
         {/* import Clients */}
-        <Careers />
+        
 
         {/* import ContactUs */}
-        <ContactUs />
+        
 
         {/* import Footer */}
         <Footer />
