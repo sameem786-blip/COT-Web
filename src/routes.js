@@ -1,5 +1,5 @@
 import Index1 from "./pages/index1/index1";
-// import Index2 from "./pages/index2/index2";
+// import Index2 from "./pages/portfolio/index2";
 // import Index3 from "./pages/index3/index3";
 // import Index4 from "./pages/index1/index4";
 // import Index5 from "./pages/index5/index5";

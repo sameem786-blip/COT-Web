@@ -70,7 +70,7 @@ p {
   text-transform: uppercase;
 }
 
-.quote{
+.quote {
   width: 70%;
 }
 .navbar-custom .navbar-nav li a:after {
@@ -131,14 +131,12 @@ p {
   border-color: transparent;
 }
 
-.navbar-light .navbar-nav li a{
+.navbar-light .navbar-nav li a {
   color: rgba(52, 58, 64, 0.55) !important;
-  
 }
 
-.navbar-light h5{
+.navbar-light h5 {
   color: black !important;
-  
 }
 
 .navbar-light .navbar-nav li.active a,
@@ -216,7 +214,7 @@ p {
     background: #0000ca;
   }
 
-  .form-container{
+  .form-container {
     margin-bottom: 30px;
   }
   .navbar-custom .logo-sticky .logo-dark {
@@ -237,12 +235,23 @@ p {
     color: #0000ca !important;
   }
 }
+
 .modal-career {
   padding: 10px 40px;
 }
+
 .modal-career h5 {
   margin-top: 5px;
 }
+
+.modal-portfolio {
+  padding: 10px 40px;
+}
+
+.modal-portfolio h5 {
+  margin-top: 5px;
+}
+
 .btn {
   padding: 12px 32px;
   border: 1px solid;
@@ -286,7 +295,6 @@ p {
   padding: 5px 20px;
   margin-left: 40px;
 }
-
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1095,7 +1103,6 @@ p {
 .message {
   height: 150px;
   margin-bottom: 20px;
-  
 }
 
 .hero-4-bg .subcribe-form input {
@@ -1641,7 +1648,7 @@ p {
     border-radius: 2px;
   }
 
-  .btn-upload{
+  .btn-upload {
     margin-left: 130px;
   }
   .cta-content .cta-btn {

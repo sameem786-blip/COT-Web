@@ -1,107 +1,112 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import React, { Component, useState } from "react";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "reactstrap";
+import { Link, useHistory } from "react-router-dom";
 
 //Import Section Title
 import SectionTitle from "../Common/SectionTitle";
-
+//Import Carousel
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import banner1 from "../../assets/images/Project-1.png";
+import banner2 from "../../assets/images/Project-2.png";
 
+const ModalPortfolio = props => {
+  const { buttonLabel, client, type, url, description, bannerTop, className } =
+    props;
+
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+  const history = useHistory();
+  return (
+    <div>
+      <Button
+        color='simple'
+        className='btn btn-outline-purple mt-4'
+        onClick={toggle}
+      >
+        {buttonLabel}
+      </Button>
+      <Modal isOpen={modal} toggle={toggle} className='modal-dialog modal-lg'>
+        <ModalHeader toggle={toggle}>Porfolio</ModalHeader>
+        <ModalBody className={className}>
+          <Row>
+            <Col lg={12}>
+              <img src={bannerTop} width='100%' />
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <strong>{`Client: ${client}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              {" "}
+              <strong>{`URL: ${url}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              {" "}
+              <strong>{`Tech: ${type}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <h5>Description:</h5>
+              {description}
+            </Col>
+          </Row>
+        </ModalBody>
+        <ModalFooter>
+          <Button
+            color='simple'
+            className='btn btn-outline-purple '
+            onClick={() => window.open(`/portfolio`, "_self")}
+          >
+            View Details
+          </Button>
+          <Button color='secondary' onClick={toggle}>
+            Cancel
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
 class Portfolio extends Component {
-  Project1 = {
+  Projects = {
     details: [
       {
         id: 1,
-        price: "Recruiting App",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Mobile Development | UI/UX",
-          type: "Mobile App",
-          support: "No",
-        },
+        icon: "remixicon-smartphone-line",
+        client: "COT project 1",
+        type: "Mobile Application",
+        url: "www.cot.com.pk",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        bannerTop: banner1,
       },
-    ],
-  };
-
-  Project2 = {
-    details: [
       {
         id: 2,
-        price: "Stream+",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Mobile Development | UI/UX",
-          type: "Mobile App",
-          support: "No",
-        },
-      },
-    ],
-  };
-
-  Project3 = {
-    details: [
-      {
-        id: 3,
-        price: "Freelance",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Mobile Development | UI/UX",
-          type: "Mobile App",
-          support: "No",
-        },
-      },
-    ],
-  };
-
-  Project4 = {
-    details: [
-      {
-        id: 4,
-        price: "Aura",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Web Development | UI/UX",
-          type: "Website",
-          support: "No",
-        },
-      },
-    ],
-  };
-
-  Project5 = {
-    details: [
-      {
-        id: 5,
-        price: "Surtido Rico",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Web Development | UI/UX",
-          type: "Website",
-          support: "No",
-        },
-      },
-    ],
-  };
-
-  Project6 = {
-    details: [
-      {
-        id: 6,
-        price: "Courses Management",
-        duration: "month",
-        currency: "$",
-        features: {
-          Responsibilities: "Web Development | UI/UX",
-          type: "Website",
-          support: "No",
-          
-        },
+        icon: "remixicon-computer-line",
+        client: "COT project 2",
+        type: "Web Application",
+        url: "www.cot.com.pk",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        bannerTop: banner2,
       },
     ],
   };
@@ -121,9 +126,7 @@ class Portfolio extends Component {
         items: 3,
       },
     },
-  }
-
-  
+  };
 
   render() {
     return (
@@ -137,10 +140,8 @@ class Portfolio extends Component {
               odit aut fugit sed consequuntur as sequi nesciunt.'
             />
 
-            
             <Row>
-            <OwlCarousel
-             
+              <OwlCarousel
                 items={3}
                 loop={true}
                 margin={0}
@@ -151,188 +152,40 @@ class Portfolio extends Component {
                 autoplayHoverPause={true}
                 autoplayTimeout={2500}
               >
-              {this.Project1.details.map((Project1, key) => (
-                <Col key={Project1.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative h-full'
-                    key={Project1.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project1.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project1.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project1.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
+                {this.Projects.details.map((Project, key) => (
+                  <Col key={Project.id}>
+                    <div
+                      className='pricing-box text-center bg-white p-5 mt-4 position-relative h-full'
+                      key={Project.id}
                     >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
+                      <div className='mt-4 mb-5'>
+                        <i
+                          className={` ${Project.icon} h3 text-purple pricing-icon p-4 rounded-circle`}
+                        />
+                      </div>
+                      <h5 className='text-dark font-weight-medium mb-5'>
+                        <sup className='h5'> </sup>
+                        {Project.client}
+                        <sub className='h5'></sub>
+                      </h5>
+                      <p className='text-muted'>{Project.type}</p>
 
-              {this.Project2.details.map((Project2, key) => (
-                <Col key={Project2.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={Project2.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                      <ModalPortfolio
+                        buttonLabel='View Details'
+                        client={Project.client}
+                        url={Project.url}
+                        type={Project.type}
+                        description={Project.description}
+                        bannerTop={Project.bannerTop}
+                        className='modal-portfolio'
+                      />
                     </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project2.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project2.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project2.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
-                    >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-              {this.Project3.details.map((Project3, key) => (
-                <Col  key={Project3.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={Project3.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-smartphone-line h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project3.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project3.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project3.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
-                    >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-              {this.Project4.details.map((Project4, key) => (
-                <Col  key={Project4.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={Project4.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project4.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project4.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project4.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
-                    >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-
-              {this.Project5.details.map((Project5, key) => (
-                <Col  key={Project5.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={Project5.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project5.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project5.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project5.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
-                    >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-
-              {this.Project6.details.map((Project6, key) => (
-                <Col  key={Project6.currency}>
-                  <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
-                    key={Project6.id}
-                  >
-                    <div className='mt-4 mb-5'>
-                      <i className='remixicon-computer-line h3 text-purple pricing-icon p-4 rounded-circle' />
-                    </div>
-                    <h2 className='text-dark font-weight-medium mb-5'>
-                      <sup className='h5'> </sup>
-                      {Project6.price}
-                      <sub className='h5'></sub>
-                    </h2>
-                    <p className='text-muted'>
-                      {Project6.features.type}
-                    </p>
-                    <p className='text-muted'>
-                      {Project6.features.Responsibilities}
-                    </p>
-                    <button
-                      type='button'
-                      className='btn btn-outline-purple mt-4'
-                    >
-                      Choose this plan
-                    </button>
-                  </div>
-                </Col>
-              ))}
-             </OwlCarousel>
-          </Row>
+                  </Col>
+                ))}
+              </OwlCarousel>
+            </Row>
           </Container>
         </section>
-        
 
         {/* PRICING END  */}
       </React.Fragment>

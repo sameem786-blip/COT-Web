@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
-
 //Import Image
 import heroBgImg from "../../assets/images/home.png";
-import googleImg from "../../assets/images/google-img.png";
 import bottomShap from "../../assets/images/home-4-bottom-shape.png";
 
 class Section extends Component {

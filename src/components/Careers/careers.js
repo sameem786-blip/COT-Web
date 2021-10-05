@@ -36,7 +36,7 @@ const ModalCareer = props => {
       >
         {buttonLabel}
       </Button>
-      <Modal isOpen={modal} toggle={toggle}>
+      <Modal isOpen={modal} toggle={toggle} className='modal-dialog modal-lg'>
         <ModalHeader toggle={toggle}>{title}</ModalHeader>
         <ModalBody className={className}>
           <Row>

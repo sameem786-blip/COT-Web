@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 import NavbarPage from "../../components/Navbar/Navbar_Page";
 import Section from "./section";
-import Services from "../../components/Services/services";
-import Aboutus from "../../components/Aboutus/aboutus";
-import Careers from "../../components/Careers/careers";
-import Portfolio from "../../components/Portfolio/portfolio";
 import ContactUs from "../../components/ContactUs/contactus";
 import Footer from "../../components/Footer/footer";
 
-class Index1 extends Component {
+class AllPortfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +17,6 @@ class Index1 extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.scrollNavigation, true);
-
     this.scrollNavigation();
   }
 
@@ -58,21 +53,6 @@ class Index1 extends Component {
         {/* import section */}
         <Section />
 
-        {/* import services */}
-        <Services />
-
-        {/* import Features */}
-        <Aboutus />
-
-        {/* import Achievement */}
-        {/* <Achievement /> */}
-
-        {/* import Pricing */}
-        <Portfolio />
-
-        {/* import Clients */}
-        <Careers />
-
         {/* import ContactUs */}
         <ContactUs />
 
@@ -83,4 +63,4 @@ class Index1 extends Component {
   }
 }
 
-export default Index1;
+export default AllPortfolio;
