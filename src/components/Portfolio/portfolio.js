@@ -57,6 +57,54 @@ class Portfolio extends Component {
     ],
   };
 
+  Project4 = {
+    details: [
+      {
+        id: 4,
+        price: "Aura",
+        duration: "month",
+        currency: "$",
+        features: {
+          Responsibilities: "Web Development | UI/UX",
+          type: "Website",
+          support: "No",
+        },
+      },
+    ],
+  };
+
+  Project5 = {
+    details: [
+      {
+        id: 5,
+        price: "Surtido Rico",
+        duration: "month",
+        currency: "$",
+        features: {
+          Responsibilities: "Web Development | UI/UX",
+          type: "Website",
+          support: "No",
+        },
+      },
+    ],
+  };
+
+  Project6 = {
+    details: [
+      {
+        id: 6,
+        price: "Courses Management",
+        duration: "month",
+        currency: "$",
+        features: {
+          Responsibilities: "Web Development | UI/UX",
+          type: "Website",
+          support: "No",
+        },
+      },
+    ],
+  };
+
   state = {
     responsive: {
       0: {
@@ -88,12 +136,13 @@ class Portfolio extends Component {
               odit aut fugit sed consequuntur as sequi nesciunt.'
             />
 
+            
             <Row>
             <OwlCarousel
-                className='owl-theme text-center'
-                items={2}
+             
+                items={3}
                 loop={true}
-                margin={10}
+                margin={0}
                 nav={false}
                 dots={true}
                 autoplay={true}
@@ -102,9 +151,9 @@ class Portfolio extends Component {
                 autoplayTimeout={2500}
               >
               {this.Project1.details.map((Project1, key) => (
-                <Col lg={4} key={Project1.currency}>
+                <Col key={Project1.currency}>
                   <div
-                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative h-full'
                     key={Project1.id}
                   >
                     <div className='mt-4 mb-5'>
@@ -132,7 +181,7 @@ class Portfolio extends Component {
               ))}
 
               {this.Project2.details.map((Project2, key) => (
-                <Col lg={4} key={Project2.currency}>
+                <Col key={Project2.currency}>
                   <div
                     className='pricing-box text-center bg-white p-5 mt-4 position-relative'
                     key={Project2.id}
@@ -161,7 +210,7 @@ class Portfolio extends Component {
                 </Col>
               ))}
               {this.Project3.details.map((Project3, key) => (
-                <Col lg={4} key={Project3.currency}>
+                <Col  key={Project3.currency}>
                   <div
                     className='pricing-box text-center bg-white p-5 mt-4 position-relative'
                     key={Project3.id}
@@ -189,10 +238,100 @@ class Portfolio extends Component {
                   </div>
                 </Col>
               ))}
-              </OwlCarousel>
-            </Row>
+              {this.Project4.details.map((Project4, key) => (
+                <Col  key={Project4.currency}>
+                  <div
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    key={Project4.id}
+                  >
+                    <div className='mt-4 mb-5'>
+                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                    </div>
+                    <h2 className='text-dark font-weight-medium mb-5'>
+                      <sup className='h5'> </sup>
+                      {Project4.price}
+                      <sub className='h5'></sub>
+                    </h2>
+                    <p className='text-muted'>
+                      {Project4.features.type}
+                    </p>
+                    <p className='text-muted'>
+                      {Project4.features.Responsibilities}
+                    </p>
+                    <button
+                      type='button'
+                      className='btn btn-outline-purple mt-4'
+                    >
+                      Choose this plan
+                    </button>
+                  </div>
+                </Col>
+              ))}
+
+              {this.Project5.details.map((Project5, key) => (
+                <Col  key={Project5.currency}>
+                  <div
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    key={Project5.id}
+                  >
+                    <div className='mt-4 mb-5'>
+                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                    </div>
+                    <h2 className='text-dark font-weight-medium mb-5'>
+                      <sup className='h5'> </sup>
+                      {Project5.price}
+                      <sub className='h5'></sub>
+                    </h2>
+                    <p className='text-muted'>
+                      {Project5.features.type}
+                    </p>
+                    <p className='text-muted'>
+                      {Project5.features.Responsibilities}
+                    </p>
+                    <button
+                      type='button'
+                      className='btn btn-outline-purple mt-4'
+                    >
+                      Choose this plan
+                    </button>
+                  </div>
+                </Col>
+              ))}
+
+              {this.Project6.details.map((Project6, key) => (
+                <Col  key={Project6.currency}>
+                  <div
+                    className='pricing-box text-center bg-white p-5 mt-4 position-relative'
+                    key={Project6.id}
+                  >
+                    <div className='mt-4 mb-5'>
+                      <i className='remixicon-star-line h3 text-purple pricing-icon p-4 rounded-circle' />
+                    </div>
+                    <h2 className='text-dark font-weight-medium mb-5'>
+                      <sup className='h5'> </sup>
+                      {Project6.price}
+                      <sub className='h5'></sub>
+                    </h2>
+                    <p className='text-muted'>
+                      {Project6.features.type}
+                    </p>
+                    <p className='text-muted'>
+                      {Project6.features.Responsibilities}
+                    </p>
+                    <button
+                      type='button'
+                      className='btn btn-outline-purple mt-4'
+                    >
+                      Choose this plan
+                    </button>
+                  </div>
+                </Col>
+              ))}
+             </OwlCarousel>
+          </Row>
           </Container>
         </section>
+        
 
         {/* PRICING END  */}
       </React.Fragment>

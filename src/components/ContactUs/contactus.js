@@ -15,15 +15,17 @@ class ContactUs extends Component {
           id='contactus'
         >
           <div className='bg-cta-overlay' />
+          <Container className="container">
           <SectionTitle
             title='Request A Quote'
             description='Please feel free to contact us through the form below.'
             color="text-white"
           />
+
           <div className='form-container'>
             <form onSubmit={this.submitForm}>
-              <div className='row'>
-                <Col xs='12' lg='6'>
+              <div className='row m-auto'>
+                <Col xs='12' lg='6' >
                   <input
                     type='text'
                     className='input'
@@ -49,7 +51,7 @@ class ContactUs extends Component {
                     required
                   ></input>
                 </Col>
-                <Col xs='12' lg='6'>
+                <Col xs='12' lg='6' >
                   <textarea
                     className='input message'
                     id='exampleFormControlTextarea1'
@@ -61,7 +63,9 @@ class ContactUs extends Component {
               <input type='submit' className='form-submit' value='Submit' />
             </form>
           </div>
+         </Container>
         </section>
+        
 
         {/* CTA END  */}
       </React.Fragment>

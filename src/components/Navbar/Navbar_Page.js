@@ -97,7 +97,7 @@ class NavbarPage extends Component {
               style={{ top: this.state.topPos }}
             >
               <Container>
-                <NavbarBrand href='/' className='logo'>
+                <NavbarBrand href='/' className='logo text-light'>
                   <h5>Computing Of Tomorrow</h5>
                 </NavbarBrand>
 

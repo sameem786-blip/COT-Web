@@ -38,15 +38,17 @@ p {
 
 .navbar-custom .logo-sticky .logo-dark {
   display: none;
+
 }
 
 .navbar-custom .logo-sticky .logo-light {
   display: inline-block;
+  color: white;
 }
 
 .navbar-custom .navbar-nav li a {
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
   font-size: 13px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1338,6 +1340,7 @@ p {
   border-radius: 6px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  
 }
 
 .pricing-box .pricing-icon {
