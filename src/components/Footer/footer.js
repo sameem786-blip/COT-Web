@@ -43,10 +43,10 @@ class Footer extends Component {
       },
     ],
     socialIcons: [
-      { icon: "remixicon-facebook-line", iconLink: "#" },
+      { icon: "remixicon-facebook-line", iconLink: "https://www.facebook.com/ComputingOfTomorrow" },
       { icon: "remixicon-twitter-line", iconLink: "#" },
       { icon: "remixicon-instagram-line", iconLink: "#" },
-      { icon: "remixicon-skype-line", iconLink: "#" },
+      { icon: "remixicon-linkedin-line", iconLink: "#" },
     ],
   };
 
