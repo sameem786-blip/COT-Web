@@ -31,10 +31,12 @@ class Footer extends Component {
       },
     ],
     socialIcons: [
-      { icon: "remixicon-facebook-line", iconLink: "https://www.facebook.com/ComputingOfTomorrow" },
-      { icon: "remixicon-twitter-line", iconLink: "#" },
-      { icon: "remixicon-instagram-line", iconLink: "#" },
       { icon: "remixicon-linkedin-line", iconLink: "#" },
+      { icon: "remixicon-facebook-line", iconLink: "https://www.facebook.com/ComputingOfTomorrow" },
+      { icon: "remixicon-instagram-line", iconLink: "#" },
+      { icon: "remixicon-twitter-line", iconLink: "#" },
+      
+      
     ],
   };
 
@@ -54,7 +56,7 @@ class Footer extends Component {
                   </p>
                   <ul className="list-inline footer-icon mt-4">
                     {this.state.socialIcons.map((item, key) => (
-                      <li className="list-inline-item h4 mr-4" key={key}>
+                      <li className="list-inline-item h4 mr-4 social-icons" key={key}>
                         <Link to={item.iconLink} className="text-purple">
                           <i className={item.icon} />
                         </Link>
@@ -73,12 +75,12 @@ class Footer extends Component {
                         </h5>
                         <ul className="list-unstyled footer-sub-menu">
                           {item.links.map((fLink, key) => (
-                            <li href={fLink.link}className="f-15 mt-3 mb-3" key={key}>
+                            <li className="f-15 mt-3 mb-3" key={key}>
                             <Link className="text-muted get-in-touch-icon">
-                                <i className={fLink.icon} />
+                            <a href={fLink.link}><i className={fLink.icon} /></a>
                               </Link>
                               <Link className="text-muted get-in-touch-link">
-                                {fLink.item}
+                                <a href={fLink.link}>{fLink.item}</a>
                               </Link>
                             </li>
                           ))}
