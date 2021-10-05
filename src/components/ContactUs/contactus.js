@@ -35,8 +35,7 @@ class ContactUs extends Component {
                   <input
                     type='text'
                     className='input'
-                    placeholder='Organization*'
-                    required
+                    placeholder='Organization'
                   ></input>
                   <input
                     type='tel'
@@ -47,16 +46,16 @@ class ContactUs extends Component {
                   <input
                     type='email'
                     className='input'
-                    placeholder='Email*'
-                    required
+                    placeholder='Email'
                   ></input>
                 </Col>
                 <Col xs='12' lg='6' >
                   <textarea
                     className='input message'
                     id='exampleFormControlTextarea1'
-                    placeholder='Message'
+                    placeholder='Message*'
                     rows='3'
+                    required
                   ></textarea>
                 </Col>
               </div>
