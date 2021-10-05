@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import { Container, Row, Col } from "reactstrap";
 
 //Import Components
 import SectionTitle from "../Common/SectionTitle";
@@ -9,17 +10,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 //Careers Modal
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-} from "reactstrap";
-const careerModal = props => {
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+const ModalCareer = props => {
   const {
     buttonLabel,
     title,
@@ -213,7 +205,7 @@ class Careers extends Component {
                         {`Shift: ${career.shift}`}
                       </p>
 
-                      <ModalExample
+                      <ModalCareer
                         buttonLabel='View Details'
                         title={career.title}
                         experience={career.experience}
