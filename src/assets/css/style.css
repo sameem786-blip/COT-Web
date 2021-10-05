@@ -13,8 +13,17 @@ h5 {
   font-family: "Montserrat", sans-serif;
 }
 
-.get-in-touch{
+.get-in-touch-section{
   margin-left: 190px;
+}
+
+.get-in-touch-icon{
+  font-size: large;
+  margin-right: 6px;
+}
+
+.get-in-touch-link{
+  font-size: large;
 }
 
 a {

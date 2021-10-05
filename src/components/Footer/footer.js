@@ -25,8 +25,8 @@ class Footer extends Component {
       {
         title: "Get In Touch",
         links: [
-          { icon: "remixicon-mail-line", item: "info@cot.com.pk", link: "#" },
-          { icon: "remixicon-phone-line", item: "(+92)317 4712765", link: "#" },
+          { icon: "remixicon-mail-line", item: "info@cot.com.pk", link: "mailto: info@cot.com.pk" },
+          { icon: "remixicon-phone-line", item: "(+92)317 4712765", link: "tel:(+92)317 4712765" },
         ],
       },
     ],
@@ -47,7 +47,7 @@ class Footer extends Component {
             <Row>
               <Col lg={5}>
                 <div className="footer-about-content mt-4">
-                  <h3>Computing Of Tomorrow</h3>
+                  <h3><span className="text-purple">C</span>omputing <span className="text-purple">O</span>f <span className="text-purple">T</span>omorrow</h3>
                   <p className="mt-4 text-muted f-15">
                     Sed ut perspiciatis unde omnis iste a natus error scusantium
                     doloremque rem explicabo.
@@ -63,19 +63,21 @@ class Footer extends Component {
                   </ul>
                 </div>
               </Col>
-              <Col lg={5} className="get-in-touch offset-lg-1">
+              <Col lg={5} className="get-in-touch-section offset-lg-1">
                 <div className="row">
                   {this.state.footerItems.map((item, key) => (
-                    <div className="col-md-4" key={key}>
+                    <div className="col-md-6" key={key}>
                       <div className="mt-4">
                         <h5 className="text-dark footer-title font-weight-medium mb-4">
                           {item.title}
                         </h5>
                         <ul className="list-unstyled footer-sub-menu">
                           {item.links.map((fLink, key) => (
-                            <li className="f-15 mt-3 mb-3" key={key}>
-                              <Link className="text-muted">
-                              
+                            <li href={fLink.link}className="f-15 mt-3 mb-3" key={key}>
+                            <Link className="text-muted get-in-touch-icon">
+                                <i className={fLink.icon} />
+                              </Link>
+                              <Link className="text-muted get-in-touch-link">
                                 {fLink.item}
                               </Link>
                             </li>
