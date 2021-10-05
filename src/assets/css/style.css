@@ -13,6 +13,10 @@ h5 {
   font-family: "Montserrat", sans-serif;
 }
 
+.get-in-touch{
+  margin-left: 190px;
+}
+
 a {
   text-decoration: none !important;
   outline: none;
@@ -126,6 +130,7 @@ p {
 .navbar-light .navbar-nav li a:active {
   color: #0000CA !important;
 }
+
 
 .navbar-light .navbar-nav li.active a:after,
 .navbar-light .navbar-nav li a:hover:after,

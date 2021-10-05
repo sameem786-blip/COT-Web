@@ -11,34 +11,22 @@ import footerlogo from "../../assets/images/logo-dark.png";
 class Footer extends Component {
   state = {
     footerItems: [
+      // {
+      //   title: "Product",
+      //   links: [
+      //     { linkTitle: "Tranding", link: "/" },
+      //     { linkTitle: "Popular", link: "#" },
+      //     { linkTitle: "Job Opening", link: "#" },
+      //     { linkTitle: "Customers", link: "#" },
+      //     { linkTitle: "Features", link: "#" },
+      //   ],
+      // },
+      
       {
-        title: "Product",
+        title: "Get In Touch",
         links: [
-          { linkTitle: "Tranding", link: "/" },
-          { linkTitle: "Popular", link: "#" },
-          { linkTitle: "Job Opening", link: "#" },
-          { linkTitle: "Customers", link: "#" },
-          { linkTitle: "Features", link: "#" },
-        ],
-      },
-      {
-        title: "Company",
-        links: [
-          { linkTitle: "Works", link: "#" },
-          { linkTitle: "Strategy", link: "#" },
-          { linkTitle: "Releases", link: "#" },
-          { linkTitle: "Press", link: "#" },
-          { linkTitle: "Mission", link: "#" },
-        ],
-      },
-      {
-        title: "Learn More",
-        links: [
-          { linkTitle: "Developers", link: "#" },
-          { linkTitle: "Support", link: "#" },
-          { linkTitle: "Customer Service", link: "#" },
-          { linkTitle: "Get Started", link: "#" },
-          { linkTitle: "Guide", link: "#" },
+          { icon: "remixicon-mail-line", item: "info@cot.com.pk", link: "#" },
+          { icon: "remixicon-phone-line", item: "(+92)317 4712765", link: "#" },
         ],
       },
     ],
@@ -57,13 +45,9 @@ class Footer extends Component {
         <footer className="pt-5 pb-4 position-relative bg-light">
           <Container className="container">
             <Row>
-              <Col lg={3}>
+              <Col lg={5}>
                 <div className="footer-about-content mt-4">
-                  <img
-                    src={footerlogo}
-                    alt="footerLogo"
-                    className="img-fluid"
-                  />
+                  <h3>Computing Of Tomorrow</h3>
                   <p className="mt-4 text-muted f-15">
                     Sed ut perspiciatis unde omnis iste a natus error scusantium
                     doloremque rem explicabo.
@@ -79,7 +63,7 @@ class Footer extends Component {
                   </ul>
                 </div>
               </Col>
-              <Col lg={8} className="offset-lg-1">
+              <Col lg={5} className="get-in-touch offset-lg-1">
                 <div className="row">
                   {this.state.footerItems.map((item, key) => (
                     <div className="col-md-4" key={key}>
@@ -90,8 +74,9 @@ class Footer extends Component {
                         <ul className="list-unstyled footer-sub-menu">
                           {item.links.map((fLink, key) => (
                             <li className="f-15 mt-3 mb-3" key={key}>
-                              <Link to={fLink.link} className="text-muted">
-                                {fLink.linkTitle}
+                              <Link className="text-muted">
+                              
+                                {fLink.item}
                               </Link>
                             </li>
                           ))}
