@@ -30,7 +30,6 @@ class NavbarPage extends Component {
         { id: 3, idnm: "portfolio", navheading: "Portfolio" },
         { id: 4, idnm: "careers", navheading: "Careers" },
         { id: 5, idnm: "service", navheading: "Services" },
-      
       ],
       isOpen: false,
       topPos: "0",
@@ -145,7 +144,14 @@ class NavbarPage extends Component {
                   </ScrollspyNav>
                   <ul className='navbar-nav'>
                     <li className='nav-item'>
-                      <Link to='#' className='nav-link'>
+                      <Link
+                        to={{
+                          pathname:
+                            "https://www.facebook.com/ComputingOfTomorrow",
+                        }}
+                        target='_blank'
+                        className='nav-link'
+                      >
                         <i className='remixicon-facebook-line f-16' />
                       </Link>
                     </li>
