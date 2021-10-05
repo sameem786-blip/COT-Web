@@ -10,21 +10,21 @@ class Services extends Component {
     services: [
       {
         title: "Web Development",
-        icon: "pe-7s-exapnd2",
+        icon: "remixicon-computer-line",
         description:
           "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
         link: "#",
       },
       {
         title: "Mobile App Development",
-        icon: "pe-7s-exapnd2",
+        icon: "remixicon-smartphone-line",
         description:
           "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
         link: "#",
       },
       {
         title: "Cloud Development",
-        icon: "pe-7s-exapnd2",
+        icon: "remixicon-cloud-line",
         description:
           "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
         link: "#",

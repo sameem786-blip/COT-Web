@@ -5,6 +5,9 @@ import SectionTitle from "../../components/Common/SectionTitle";
 
 import emailjs from 'emailjs-com';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import quote from "../../assets/images/quote.png";
 
 class ContactUs extends Component {
@@ -12,12 +15,13 @@ class ContactUs extends Component {
     function sendEmail(e){
       e.preventDefault();
   
-      emailjs.sendForm('service_rigts0h', 'template_bcq4lik', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
+      emailjs.sendForm('service_d07io9s', 'template_x1zi1ky', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
         .then((result) => {
-            console.log(result.text);
+          toast.success('Your Mail Has Been Succssfully Sent.');
         }, (error) => {
             console.log(error.text);
         });
+        
         e.target.reset();
     }
     return (
@@ -28,11 +32,16 @@ class ContactUs extends Component {
         >
           <div className='bg-cta-overlay' />
           <Container className="container">
-          <SectionTitle
-            title='Request A Quote'
-            description='Request a quote & we will get in touch as soon as possible.'
-            color="text-white"
-          />
+          <Row className='justify-content-center'>
+          <Col lg='7'>
+            <div className='text-center title mb-4'>
+              <h5 className='font-weight-bold text-uppercase text-light'>
+                Request a quote
+              </h5>
+              <p className='text-muted'>Request a quote & we will get in touch as soon as possible.</p>
+            </div>
+          </Col>
+        </Row>
 
           <div className='form-container'>
             <form action="#" method="get" onSubmit={sendEmail} autocomplete="off">
@@ -41,7 +50,7 @@ class ContactUs extends Component {
                   <input
                     type='text'
                     className='input'
-                    name='name'
+                    name='from_name'
                     placeholder='Name*'
                     required
                   ></input>
@@ -73,7 +82,7 @@ class ContactUs extends Component {
                   ></textarea>
                   <div>
                     <label>
-                      <input type="file" ngf-select ng-model="new_files" ng-change="fs.uploadFiles(new_files)" multiple hidden/>
+                      <input type="file" ngf-select ng-model="new_files" name="file" ng-change="fs.uploadFiles(new_files)" multiple hidden/>
                       <span class="btn-upload">Upload files</span>
                     </label>
                     </div>
@@ -90,6 +99,11 @@ class ContactUs extends Component {
               </div>
             </form>
           </div>
+          <ToastContainer 
+          position="top-center"
+          draggable
+          pauseOnHover
+          />
          </Container>
         </section>
         
