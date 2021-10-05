@@ -29,18 +29,17 @@ class Services extends Component {
           "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
         link: "#",
       },
-      
     ],
   };
   render() {
     return (
       <React.Fragment>
         {/* SERVICE START  */}
-        <section id="service" className="section position-relative">
+        <section id='service' className='section position-relative'>
           <Container>
             <SectionTitle
-              title="Services"
-              description="We offer the following services professionally."
+              title='Services'
+              description='We offer the following services professionally.'
             />
             <Row>
               <ServiceBox services={this.state.services} />

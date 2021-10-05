@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Container } from "reactstrap";
+import React, { Component, useState } from "react";
+import { Container, Row, Col } from "reactstrap";
 
 //Import Components
 import SectionTitle from "../Common/SectionTitle";
@@ -9,67 +9,143 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-//Import Client images
-import client1 from "../../assets/images/client/img-1.jpg";
+//Careers Modal
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+const ModalExample = props => {
+  const {
+    buttonLabel,
+    title,
+    experience,
+    location,
+    shift,
+    requirments,
+    message,
+    className,
+  } = props;
+
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
+  return (
+    <div>
+      <Button
+        color='simple'
+        className='btn btn-outline-purple mt-4'
+        onClick={toggle}
+      >
+        {buttonLabel}
+      </Button>
+      <Modal isOpen={modal} toggle={toggle}>
+        <ModalHeader toggle={toggle}>{title}</ModalHeader>
+        <ModalBody className={className}>
+          <Row>
+            <Col lg={12}>
+              <strong>{`Location: ${location}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              {" "}
+              <strong>{`Shift: ${shift}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <strong>{`Experience Required: ${experience}`}</strong>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <h5>Requirments</h5>
+              {requirments}
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              <strong>{message}</strong>
+            </Col>
+          </Row>
+        </ModalBody>
+        <ModalFooter>
+          <Button color='secondary' onClick={toggle}>
+            Cancel
+          </Button>
+        </ModalFooter>
+      </Modal>
+    </div>
+  );
+};
 
 class Careers extends Component {
   state = {
-    clients: [
+    careers: [
       {
         id: 1,
-        img: "",
-        name: "Irene Devoe",
-        technology: "Web Development, USA",
-        description:
-          "Aeque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur numquam tempora.",
+        title: "Graphic Designer",
+        experience: "2-3 years",
+        requirments:
+          "Hands-on experience of Creating Logo, Stationary and Graphic Designing.In-depth knowledge of Adobe Photoshop and Illustrator.Able to Create Artwork, Icons, and Logos using Adobe Illustrator.Able to work in a fast-paced environment.Fast enough to meet the deadlines.A creative thinker as well as a strong team player.Strong organizational skills and interpersonal skills.Ability and urge to learn the latest digital media technologies.Ability to prioritize the work.Multitasking ability.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
       {
         id: 2,
-        img: "",
-        name: "Adrian Kidd",
-        technology: "Web Designer, USA",
-        description:
-          "Et harum quidem a rerum that facilis est et expedita libero tempore soluta nobis cumque as impedit.",
+        title: "Magento Developer",
+        experience: "2-3 years",
+        requirments:
+          "Understanding of Magento’s code structure, extension architecture and theming hierarchy (Magento 1.9 & 2.0)Experience in customizing Magento’s front-end components using layout XML, blocks, and templatesExperience in Magento Performance OptimizationUnderstanding of Extending Magento extensionsUnderstanding of Store catalog (categories/products/attributes)Experience with CSS, JavaScript, Caching, etcUnderstanding of fundamental OOP concepts.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
+
       {
         id: 3,
-        img: "",
-        name: "Shari Turner",
-        technology: "Graphic Designer, USA",
-        description:
-          "Sed ut perspiciatis a unde omnis iste natus error sit as voluptatem accusantium laudantium.",
+        title: "PHP Developer",
+        experience: "2-3 years",
+        requirments:
+          "Designing & Developing websites & plugins from scratch on custom theme.Customization of pre-build themes and plugins as per requirement to develop or design a site.Modifications / Customization to the existing websites as per project details.Development of all device responsive & adaptive sites.Ensuring the security through plugins & Cpanel of the site along with speed optimization through various plugins / tools.Assistance in fixing bugs and providing technical support wherever required.Strong Experience with Custom WordPress themes and plugins from scratch with great design and focus on UI/UX and strong understanding of PHP back-end development.Customization development Skills MySQL, JavaScript, PHP, Ajax, Jquery, Wordpress, CSS3, HTML5, Bootstrap,LaravellManaged more than one custom WordPress site and strong ability to learn and adapt new changes.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
       {
         id: 4,
-        img: "",
-        name: "Robert Story",
-        technology: "Web Designer, USA",
-        description:
-          "Aeque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur numquam tempora.",
+        title: "Wordpress Developer",
+        experience: "2-3 years",
+        requirments:
+          "Design & Develop websites from scratch on custom theme.Customization of pre-build themes and plugins as per requirement to develop or design a site.Modifications / Customization to the existing websites as per project details.Development of all device responsive & adaptive sites.Ensuring the security through plugins & Cpanel of the site along with speed optimization through various plugins / tools.Assistance in fixing bugs and providing technical support wherever required.Strong Experience with Custom WordPress themes and plugins from scratch with great design and focus on UI/UX and strong understanding of PHP back-end development.Customization development Skills MySQL, JavaScript, PHP, Ajax, Jquery, Wordpress, CSS3, HTML5, Bootstrap,LaravellManaged more than one custom WordPress site and strong ability to learn and adapt new changes.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
       {
         id: 5,
-        img: "",
-        name: "Lisa Traxler",
-        technology: "Graphic Designer, USA",
-        description:
-          "Et harum quidem a rerum that facilis est et expedita libero tempore soluta nobis cumque as impedit.",
+        title: "React Native Developer",
+        experience: "2-3 years",
+        requirments:
+          "Hands on experience in building mobile app with react native and have deployed at least 4 apps on stores.Should know the architecture of mobile apps and how react native works.experience in Redux.Experience in Javascript.Experienced with integration of Native Modules.Should know object oriented program.Experience in Java or Kotlin will be plus.Experience in Objective-c or Swift will be a plus.Experience in ionic will be a plus.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
       {
         id: 6,
-        img: "",
-        name: "Michael Bang",
-        technology: "Web Developer, USA",
-        description:
-          "Sed ut perspiciatis a unde omnis iste natus error sit as voluptatem accusantium laudantium.",
-      },
-      {
-        id: 7,
-        img: "",
-        name: "Joyce Yates",
-        technology: "Web Designer, USA",
-        description:
+        title: "Backend Engineer",
+        experience: "2-3 years",
+        requirments:
           "Aeque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur numquam tempora.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
     ],
     responsive: {
@@ -95,8 +171,8 @@ class Careers extends Component {
         <section className='section position-relative' id='careers'>
           <Container>
             <SectionTitle
-              title='What Our Customers Say'
-              description='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.'
+              title='Join Us to Build A More Sustainable Future.'
+              description='A job at COT is a career made for you, by you'
             />
 
             <div className='row mt-4'>
@@ -112,125 +188,36 @@ class Careers extends Component {
                 autoplayHoverPause={true}
                 autoplayTimeout={2500}
               >
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Irene Devoe</h5>
-                    <p className='text-muted f-14'>Web Development, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Aeque porro quisquam est qui dolorem ipsum quia dolor sit
-                      amet consectetur numquam tempora.
-                    </p>
+                {this.state.careers.map((career, id) => (
+                  <div className='item'>
+                    <div className='testi-content bg-white text-center m-3'>
+                      {/* <img
+                        src={client1}
+                        alt='client'
+                        className='img-fluid mx-auto d-block rounded-circle user-img'
+                      /> */}
+                      <h2 className='text-dark mt-4 f-20 mb-0'>
+                        {career.title}
+                      </h2>
+                      <p className='text-muted f-14'>{`Experience Required: ${career.experience}`}</p>
+                      <p className='text-muted f-14'>{`Location: ${career.location}`}</p>
+                      <p className='text-muted f-15 mt-3 mb-0'>
+                        {`Shift: ${career.shift}`}
+                      </p>
+
+                      <ModalExample
+                        buttonLabel='View Details'
+                        title={career.title}
+                        experience={career.experience}
+                        location={career.location}
+                        shift={career.shift}
+                        requirments={career.requirments}
+                        message={career.message}
+                        className='modal-career'
+                      />
+                    </div>
                   </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Adrian Kidd</h5>
-                    <p className='text-muted f-14'>Web Designer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Et harum quidem a rerum that facilis est et expedita
-                      libero tempore soluta nobis cumque as impedit.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Shari Turner</h5>
-                    <p className='text-muted f-14'>Graphic Designer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Sed ut perspiciatis a unde omnis iste natus error sit as
-                      voluptatem accusantium laudantium.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Robert Story</h5>
-                    <p className='text-muted f-14'>Web Designer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Aeque porro quisquam est qui dolorem ipsum quia dolor sit
-                      amet consectetur numquam tempora.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Lisa Traxler</h5>
-                    <p className='text-muted f-14'>Graphic Designer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Et harum quidem a rerum that facilis est et expedita
-                      libero tempore soluta nobis cumque as impedit.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Michael Bang</h5>
-                    <p className='text-muted f-14'>Web Developer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Sed ut perspiciatis a unde omnis iste natus error sit as
-                      voluptatem accusantium laudantium.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
-                <div className='item'>
-                  <div className='testi-content bg-white text-center m-3'>
-                    <img
-                      src={client1}
-                      alt='client'
-                      className='img-fluid mx-auto d-block rounded-circle user-img'
-                    />
-                    <h5 className='text-dark mt-4 f-18 mb-0'>Joyce Yates</h5>
-                    <p className='text-muted f-14'>Web Designer, USA</p>
-                    <i className='remixicon-double-quotes-r h4 testi-icon' />
-                    <p className='text-muted f-15 mt-3 mb-0'>
-                      Aeque porro quisquam est qui dolorem ipsum quia dolor sit
-                      amet consectetur numquam tempora.
-                    </p>
-                  </div>
-                </div>
-                {/* owl item and */}
+                ))}
               </OwlCarousel>
             </div>
           </Container>

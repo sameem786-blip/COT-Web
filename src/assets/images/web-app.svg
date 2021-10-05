@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="241.257" height="187.65" viewBox="0 0 241.257 187.65">
+  <g id="Group_310" data-name="Group 310" transform="translate(5.461 5.223)">
+    <g id="Group_307" data-name="Group 307" transform="translate(-0.461 -0.223)">
+      <g id="Group_305" data-name="Group 305" transform="translate(0 0)">
+        <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(0 0)" fill="none" stroke="#1279c0" stroke-width="5">
+          <rect width="231.257" height="143.366" rx="10" stroke="none"/>
+          <rect x="-2.5" y="-2.5" width="236.257" height="148.366" rx="12.5" fill="none"/>
+        </g>
+        <g id="Rectangle_130" data-name="Rectangle 130" transform="translate(11.448 12.721)" fill="none" stroke="#1279c0" stroke-width="5">
+          <rect width="208.359" height="116.206" rx="5" stroke="none"/>
+          <rect x="-2.5" y="-2.5" width="213.359" height="121.206" rx="7.5" fill="none"/>
+        </g>
+      </g>
+      <g id="Group_306" data-name="Group 306" transform="translate(90.455 145.456)">
+        <path id="Path_30" data-name="Path 30" d="M2450.095,3527.13s1.247,19.171-11.239,34.646h28.518" transform="translate(-2438.856 -3527.13)" fill="none" stroke="#1279c0" stroke-width="5"/>
+        <path id="Path_31" data-name="Path 31" d="M2456.135,3527.13s-1.247,19.171,11.239,34.646h-28.517" transform="translate(-2417.422 -3527.13)" fill="none" stroke="#1279c0" stroke-width="5"/>
+      </g>
+      <line id="Line_21" data-name="Line 21" x2="68.592" transform="translate(81.317 180.15)" fill="none" stroke="#1279c0" stroke-linecap="round" stroke-width="5"/>
+    </g>
+    <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="3.088" cy="2.952" rx="3.088" ry="2.952" transform="translate(112.539 135.918)" fill="#1279c0"/>
+  </g>
+</svg>

@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,500,600,700&display=swap");
 body {
   font-family: "Lato", sans-serif;
@@ -13,7 +12,7 @@ h5 {
   font-family: "Montserrat", sans-serif;
 }
 
-.get-in-touch{
+.get-in-touch {
   margin-left: 190px;
 }
 
@@ -42,7 +41,6 @@ p {
 
 .navbar-custom .logo-sticky .logo-dark {
   display: none;
-
 }
 
 .navbar-custom .logo-sticky .logo-light {
@@ -110,7 +108,7 @@ p {
 .navbar-light {
   background-color: #ffffff;
   border-bottom: 1px solid #f2f2f2;
-  color: #0000CA;
+  color: #0000ca;
 }
 
 .navbar-light .nav-link:after {
@@ -128,9 +126,8 @@ p {
 .navbar-light .navbar-nav li.active a,
 .navbar-light .navbar-nav li a:hover,
 .navbar-light .navbar-nav li a:active {
-  color: #0000CA !important;
+  color: #0000ca !important;
 }
-
 
 .navbar-light .navbar-nav li.active a:after,
 .navbar-light .navbar-nav li a:hover:after,
@@ -138,7 +135,7 @@ p {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background-color: #0000CA;
+  background-color: #0000ca;
 }
 
 .nav-sticky.navbar-custom {
@@ -172,7 +169,7 @@ p {
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-  color: #0000CA !important;
+  color: #0000ca !important;
 }
 
 .nav-sticky.navbar-custom .navbar-nav li.active a:after,
@@ -181,7 +178,7 @@ p {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background: #0000CA !important;
+  background: #0000ca !important;
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -198,7 +195,7 @@ p {
     text-decoration: none;
   }
   .navbar-custom .navbar-nav .nav-item .nav-link:after {
-    background: #0000CA;
+    background: #0000ca;
   }
   .navbar-custom .logo-sticky .logo-dark {
     display: inline-block;
@@ -215,10 +212,15 @@ p {
   .nav-sticky.navbar-custom .navbar-nav li.active a,
   .nav-sticky.navbar-custom .navbar-nav li a:hover,
   .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: #0000CA !important;
+    color: #0000ca !important;
   }
 }
-
+.modal-career {
+  padding: 10px 40px;
+}
+.modal-career h5 {
+  margin-top: 5px;
+}
 .btn {
   padding: 12px 32px;
   border: 1px solid;
@@ -550,8 +552,8 @@ p {
 }
 
 .btn-purple {
-  background-color: #0000CA !important;
-  border: 1px solid #0000CA !important;
+  background-color: #0000ca !important;
+  border: 1px solid #0000ca !important;
   -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   color: #ffffff;
@@ -566,15 +568,15 @@ p {
 }
 
 .btn-outline-purple {
-  border: 1px solid #0000CA !important;
-  color: #0000CA;
+  border: 1px solid #0000ca !important;
+  color: #0000ca;
 }
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus,
 .btn-outline-purple.active {
-  background-color: #0000CA !important;
-  border: 1px solid #0000CA !important;
+  background-color: #0000ca !important;
+  border: 1px solid #0000ca !important;
   -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
   box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
   color: #ffffff;
@@ -697,7 +699,7 @@ p {
 }
 
 .text-purple {
-  color: #0000CA !important;
+  color: #0000ca !important;
 }
 
 .text-black {
@@ -749,7 +751,7 @@ p {
 }
 
 .bg-purple {
-  background-color: #0000CA !important;
+  background-color: #0000ca !important;
 }
 
 .bg-black {
@@ -765,10 +767,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000CA),
+    from(#0000ca),
     to(#483afc)
   );
-  background: linear-gradient(to right, #0000CA, #483afc);
+  background: linear-gradient(to right, #0000ca, #483afc);
 }
 
 .section {
@@ -862,10 +864,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000CA),
+    from(#0000ca),
     to(#483afc)
   );
-  background: linear-gradient(to right, #0000CA, #0000CA);
+  background: linear-gradient(to right, #0000ca, #0000ca);
   opacity: 0.85;
   position: absolute;
   top: 0;
@@ -884,7 +886,7 @@ p {
   width: 100%;
 }
 
-.form-submit{
+.form-submit {
   margin-top: 50px;
   margin-left: 44%;
   cursor: pointer;
@@ -897,7 +899,6 @@ p {
   color: #ffffff;
   border-radius: 2px;
 }
-
 
 .hero-1-bg .video-play-icon {
   height: 75px;
@@ -916,7 +917,7 @@ p {
 
 .hero-1-bg .video-play-icon:hover {
   background: #ffffff;
-  color: #0000CA;
+  color: #0000ca;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
@@ -1033,7 +1034,7 @@ p {
   margin-left: 50px;
 } */
 
-.input{
+.input {
   width: 80%;
   margin-left: 40px;
   border-color: transparent;
@@ -1043,17 +1044,16 @@ p {
   border-bottom-width: 1px;
   outline: none;
   color: white;
-
 }
 
-.input::placeholder{
+.input::placeholder {
   color: white;
 }
 
 .input:focus::placeholder {
   color: transparent;
 }
-.message{
+.message {
   height: 200px;
 }
 
@@ -1162,7 +1162,7 @@ p {
 
 .hero-5-bg .img-video .video-icon .play-icon:hover {
   background: #ffffff;
-  color: #0000CA;
+  color: #0000ca;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1217,10 +1217,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000CA),
+    from(#0000ca),
     to(#5a4efd)
   );
-  background: linear-gradient(to right, #0000CA, #5a4efd);
+  background: linear-gradient(to right, #0000ca, #5a4efd);
 }
 
 .service-box:hover .service-icon,
@@ -1282,7 +1282,7 @@ p {
 }
 
 .testi-content:hover {
-  border-bottom: 2px solid #0000CA;
+  border-bottom: 2px solid #0000ca;
   -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
 }
@@ -1295,7 +1295,7 @@ p {
 }
 
 .testi-content:hover .testi-icon {
-  color: #0000CA;
+  color: #0000ca;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -1308,7 +1308,7 @@ p {
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   width: 20px;
   height: 4px;
-  background-color: #0000CA;
+  background-color: #0000ca;
 }
 
 .owl-carousel .owl-item img {
@@ -1318,7 +1318,7 @@ p {
 .owl-dot.active span {
   width: 20px !important;
   height: 4px !important;
-  background-color: #0000CA !important;
+  background-color: #0000ca !important;
 }
 
 .owl-dot span {
@@ -1345,7 +1345,6 @@ p {
   border-radius: 6px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  
 }
 
 .pricing-box .pricing-icon {
@@ -1363,10 +1362,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000CA),
+    from(#0000ca),
     to(#483afc)
   );
-  background: linear-gradient(to right, #0000CA, #483afc);
+  background: linear-gradient(to right, #0000ca, #483afc);
   padding: 8px 4px 16px 4px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
@@ -1388,10 +1387,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000CA),
+    from(#0000ca),
     to(#483afc)
   ) !important;
-  background: linear-gradient(to right, #0000CA, #483afc) !important;
+  background: linear-gradient(to right, #0000ca, #483afc) !important;
   color: #ffffff !important;
 }
 
@@ -1448,7 +1447,7 @@ p {
 }
 
 .testi-content-2 .texti-2-box .testi-2-icon {
-  color: #0000CA;
+  color: #0000ca;
 }
 
 .testi-content-2 .texti-2-box:after {
@@ -1483,7 +1482,7 @@ p {
 }
 
 .testi-content-2:hover .texti-2-box {
-  background: #0000CA;
+  background: #0000ca;
   -webkit-box-shadow: 0 4px 20px rgba(109, 98, 253, 0.3);
   box-shadow: 0 4px 20px rgba(109, 98, 253, 0.3);
 }
@@ -1497,7 +1496,7 @@ p {
 }
 
 .testi-content-2:hover .texti-2-box:after {
-  background: #0000CA;
+  background: #0000ca;
 }
 
 .testi-content-2:hover .testi-img-content img {
@@ -1570,7 +1569,7 @@ p {
     height: auto !important;
   }
   .hero-1-bg .video-play-icon {
-    background: #0000CA !important;
+    background: #0000ca !important;
     -webkit-box-shadow: 0 0 5px 8px rgba(109, 98, 253, 0.2) !important;
     box-shadow: 0 0 5px 8px rgba(109, 98, 253, 0.2) !important;
     color: #ffffff !important;
@@ -1587,7 +1586,7 @@ p {
   .cta-content {
     text-align: center !important;
   }
-  .form-submit{
+  .form-submit {
     margin-top: 50px;
     margin-left: 35%;
     cursor: pointer;
@@ -1631,6 +1630,5 @@ p {
     left: 0;
     margin: 0 auto;
   }
-  
 }
 /*# sourceMappingURL=style.css.map */
