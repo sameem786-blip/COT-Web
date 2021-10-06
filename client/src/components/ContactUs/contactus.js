@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import SectionTitle from "../../components/Common/SectionTitle";
+import axios from 'axios';
 
 import emailjs from 'emailjs-com';
 
@@ -10,20 +11,36 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import quote from "../../assets/images/quote.png";
 
-class ContactUs extends Component {
-  render() {
-    function sendEmail(e){
+const ContactUs = () => {
+	  const [ name, setName ] = useState("");
+
+    const handleSend = async (e) => {
       e.preventDefault();
-  
-      emailjs.sendForm('service_d07io9s', 'template_x1zi1ky', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
-        .then((result) => {
-          toast.success('Your Mail Has Been Succssfully Sent.');
-        }, (error) => {
-            console.log(error.text);
-        });
+      try {
+        await axios.post("http://localhost:4000/", {
+          name
+        })
         
-        e.target.reset();
+      } catch (error) {
+        console.error(error)
+      }
+      // e.target.reset();
+      setName("")
+      toast.success('Your Mail Has Been Succssfully Sent.'); 
+      
     }
+    // function sendEmail(e){
+    //   e.preventDefault();
+  
+    //   emailjs.sendForm('service_d07io9s', 'template_x1zi1ky', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
+    //     .then((result) => {
+    //       toast.success('Your Mail Has Been Succssfully Sent.');
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+        
+    //     e.target.reset();
+    // }
     return (
       <React.Fragment>
         <section
@@ -44,13 +61,15 @@ class ContactUs extends Component {
         </Row>
 
           <div className='form-container'>
-            <form action="#" method="get" onSubmit={sendEmail} autocomplete="off">
+            <form onSubmit={handleSend} autocomplete="off">
               <div className='row m-auto'>
                 <Col xs='12' lg='6' >
                   <input
                     type='text'
                     className='input'
-                    name='from_name'
+                    name='name'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     placeholder='Name*'
                     required
                   ></input>
@@ -112,6 +131,6 @@ class ContactUs extends Component {
       </React.Fragment>
     );
   }
-}
+
 
 export default ContactUs;
