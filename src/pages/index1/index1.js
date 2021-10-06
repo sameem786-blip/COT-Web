@@ -5,7 +5,7 @@ import Services from "../../components/Services/services";
 import Aboutus from "../../components/Aboutus/aboutus";
 import Careers from "../../components/Careers/careers";
 import Portfolio from "../../components/Portfolio/portfolio";
-import ContactUs from "../../components/ContactUs/contactus";
+import Quote from "../../components/ContactUs/contactus";
 import Footer from "../../components/Footer/footer";
 
 class Index1 extends Component {
@@ -55,18 +55,19 @@ class Index1 extends Component {
           isStickyNav={this.state.isStickyNav}
         />
 
-        {/* import section */}
         <Section />
 
         <Aboutus />
 
-        <ContactUs />
+        <Services />
 
         <Portfolio />
 
+        <Quote />
+
         <Careers />
 
-        <Services />
+        
 
         {/* import services */}
         

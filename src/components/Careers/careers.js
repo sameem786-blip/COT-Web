@@ -218,6 +218,28 @@ class Careers extends Component {
                     </div>
                   </div>
                 ))}
+                <div className='item'>
+                    <div className='testi-content bg-white text-center m-3'>
+                      <h2 className='text-dark mt-4 f-20 mb-0'>
+                        Didn't find what you were looking for?
+                      </h2>
+                      <p className='text-muted f-14'>`Didn't find an opening suited for you? send us your resume & we will get in touch as soon as we need someone someone with skills such as yours`</p>
+                      <p className='text-muted f-15 mt-3 mb-0'>
+                        hr@cot.com.pk
+                      </p>
+
+                      {/* <ModalCareer
+                        buttonLabel='View Details'
+                        title={career.title}
+                        experience={career.experience}
+                        location={career.location}
+                        shift={career.shift}
+                        requirments={career.requirments}
+                        message={career.message}
+                        className='modal-career'
+                      /> */}
+                    </div>
+                  </div>
               </OwlCarousel>
             </div>
           </Container>

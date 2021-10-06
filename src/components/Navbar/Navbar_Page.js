@@ -25,11 +25,11 @@ class NavbarPage extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "aboutus", navheading: "About Us" },
-        { id: 2, idnm: "contactus", navheading: "Contact Us" },
-        { id: 3, idnm: "portfolio", navheading: "Portfolio" },
-        { id: 4, idnm: "careers", navheading: "Careers" },
+        { id: 1, idnm: "aboutus", navheading: "About Us" },    
         { id: 5, idnm: "service", navheading: "Services" },
+        { id: 3, idnm: "portfolio", navheading: "Portfolio" },
+        { id: 2, idnm: "contactus", navheading: "Quote" },  
+        { id: 4, idnm: "careers", navheading: "Careers" },
       ],
       isOpen: false,
       topPos: "0",
