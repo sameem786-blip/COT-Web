@@ -280,22 +280,6 @@ p {
   color: #ffffff;
 }
 
-.btn-upload {
-  color: white !important;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: small;
-  font-weight: 100px;
-  background-color: rgba(52, 58, 64, 0.55) !important;
-  border: 1px solid #2b53e1 !important;
-  -webkit-box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
-  box-shadow: 0 3px 10px rgba(43, 83, 225, 0.5) !important;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  padding: 5px 20px;
-  margin-left: 40px;
-}
-
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.active {
@@ -1077,10 +1061,6 @@ p {
   margin: 0px auto;
 }
 
-/* .row{
-  margin-left: 50px;
-} */
-
 .input {
   width: 80%;
   margin-left: 40px;
@@ -1649,10 +1629,6 @@ p {
     border-radius: 2px;
   }
 
-  .btn-upload {
-    margin-left: 110px;
-  }
-
   .social-icons {
     margin-left: 20px;
   }
@@ -1693,4 +1669,3 @@ p {
     margin: 0 auto;
   }
 }
-/*# sourceMappingURL=style.css.map */

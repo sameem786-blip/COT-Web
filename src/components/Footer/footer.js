@@ -5,22 +5,9 @@ import { Container, Row, Col } from "reactstrap";
 //Import Footer link
 import FooterLinks from "./footer-links";
 
-//Import Images
-import footerlogo from "../../assets/images/logo-dark.png";
-
 class Footer extends Component {
   state = {
     footerItems: [
-      // {
-      //   title: "Product",
-      //   links: [
-      //     { linkTitle: "Tranding", link: "/" },
-      //     { linkTitle: "Popular", link: "#" },
-      //     { linkTitle: "Job Opening", link: "#" },
-      //     { linkTitle: "Customers", link: "#" },
-      //     { linkTitle: "Features", link: "#" },
-      //   ],
-      // },
 
       {
         title: "Get In Touch",
