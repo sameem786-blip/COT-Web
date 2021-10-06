@@ -23,8 +23,8 @@ class Services extends Component {
         link: "#",
       },
       {
-        title: "Cloud Development",
-        icon: "remixicon-cloud-line",
+        title: "Graphic Desgn",
+        icon: "remixicon-image-line",
         description:
           "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
         link: "#",
