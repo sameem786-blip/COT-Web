@@ -70,15 +70,15 @@ const ModalPortfolio = props => {
           </Row>
         </ModalBody>
         <ModalFooter>
-          <Button
+          {/* <Button
             color='simple'
             className='btn btn-outline-purple '
             onClick={() => window.open(`/portfolio`, "_self")}
           >
             View Details
-          </Button>
+          </Button> */}
           <Button color='secondary' onClick={toggle}>
-            Cancel
+            Close
           </Button>
         </ModalFooter>
       </Modal>

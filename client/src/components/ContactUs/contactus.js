@@ -12,35 +12,19 @@ import 'react-toastify/dist/ReactToastify.css';
 import quote from "../../assets/images/quote.png";
 
 const ContactUs = () => {
-	  const [ name, setName ] = useState("");
-
-    const handleSend = async (e) => {
+	  
+    function sendEmail(e){
       e.preventDefault();
-      try {
-        await axios.post("http://localhost:4000/", {
-          name
-        })
-        
-      } catch (error) {
-        console.error(error)
-      }
-      // e.target.reset();
-      setName("")
-      toast.success('Your Mail Has Been Succssfully Sent.'); 
-      
-    }
-    // function sendEmail(e){
-    //   e.preventDefault();
   
-    //   emailjs.sendForm('service_d07io9s', 'template_x1zi1ky', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
-    //     .then((result) => {
-    //       toast.success('Your Mail Has Been Succssfully Sent.');
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
+      emailjs.sendForm('service_d07io9s', 'template_x1zi1ky', e.target, 'user_gl6B1DcPzcRTirqZNpEzc')
+        .then((result) => {
+          toast.success('Your Mail Has Been Succssfully Sent.');
+        }, (error) => {
+            console.log(error.text);
+        });
         
-    //     e.target.reset();
-    // }
+        e.target.reset();
+    }
     return (
       <React.Fragment>
         <section
@@ -61,15 +45,13 @@ const ContactUs = () => {
         </Row>
 
           <div className='form-container'>
-            <form onSubmit={handleSend} autocomplete="off">
+            <form onSubmit={sendEmail} autocomplete="off">
               <div className='row m-auto'>
                 <Col xs='12' lg='6' >
                   <input
                     type='text'
                     className='input'
                     name='name'
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
                     placeholder='Name*'
                     required
                   ></input>
@@ -99,12 +81,7 @@ const ContactUs = () => {
                     rows='3'
                     required
                   ></textarea>
-                  <div>
-                    <label>
-                      <input type="file" ngf-select ng-model="new_files" name="file" ng-change="fs.uploadFiles(new_files)" multiple hidden/>
-                      <span class="btn-upload">Upload files</span>
-                    </label>
-                    </div>
+                  
                     <input type='submit' className='form-submit' value='Submit' />
                 </Col>
                 <Col xs='12' lg='6' >
