@@ -16,7 +16,7 @@ class Aboutus extends Component {
           <Container>
             <SectionTitle
               title='About Us'
-              description='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.'
+              description='COT makes sure you get the best service. A team of experienced developers that makes your business grow to match the fast paced world of tomorrow, today. We will create your software ready for tomorrow, so you expect to prosper today, tomorrow and forever.'
             />
 
             <Row className='align-items-center'>
@@ -37,7 +37,8 @@ class Aboutus extends Component {
                     <span className='font-weight-600'>Projects</span>
                   </h4>
                   <p className='text-muted mb-4 f-15'>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed consequuntur as sequi nesciunt.
+                  Our Vision is to take the world to the future. We will make you ready for tomorrow.
+
                   </p>
 
                   {/* <Link to='#' className='text-purple f-17'>

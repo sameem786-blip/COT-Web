@@ -27,12 +27,11 @@ class Section extends Component {
             <Row className='align-items-center hero-4-content'>
               <Col lg={5}>
                 <h1 className='text-white hero-4-title font-weight-medium mb-4 line-height-1_4'>
-                  Get Your Professional Project Done With COT
+                  GET YOUR PROJECT  MADE FOR TOMORROW
                 </h1>
-                <p className='text-white-50 mb-5'>
-                  A commitment that guarantees a beneficial partnership that is
-                  proven through successful resultant products. We assure you
-                  that you’ll have a great experience working with us.
+                <p className='text-white-50 mb-5 text-sm'>
+                We are committed to deliver the best service To make your business ready for the future.
+
                 </p>
               </Col>
               <div className='col-lg-6 offset-lg-1'>

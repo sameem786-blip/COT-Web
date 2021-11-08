@@ -12,21 +12,35 @@ class Services extends Component {
         title: "Web Development",
         icon: "remixicon-computer-line",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
+          "Wordpress | PHP | MEARN | MERN",
         link: "#",
       },
       {
         title: "Mobile App Development",
         icon: "remixicon-smartphone-line",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
+          "Native Android | Native iOS | Flutter | React Native",
+        link: "#",
+      },
+      {
+        title: "Blockchain Development",
+        icon: "remixicon-image-line",
+        description:
+          "",
         link: "#",
       },
       {
         title: "Graphic Desgn",
         icon: "remixicon-image-line",
         description:
-          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur consequuntu.",
+          "Photoshop | Illustrator | After Effects",
+        link: "#",
+      },
+      {
+        title: "Search Engine Optimization",
+        icon: "remixicon-image-line",
+        description:
+          "",
         link: "#",
       },
     ],
@@ -39,7 +53,7 @@ class Services extends Component {
           <Container>
             <SectionTitle
               title='Services'
-              description='We offer the following services professionally.'
+              description='We offer software development services.'
             />
             <Row>
               <ServiceBox services={this.state.services} />
