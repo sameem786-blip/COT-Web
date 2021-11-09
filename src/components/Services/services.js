@@ -24,7 +24,7 @@ class Services extends Component {
       },
       {
         title: "Blockchain Development",
-        icon: "remixicon-image-line",
+        icon: "remixicon-links-line",
         description:
           "",
         link: "#",
@@ -38,14 +38,14 @@ class Services extends Component {
       },
       {
         title: "Search Engine Optimization",
-        icon: "remixicon-image-line",
+        icon: "remixicon-settings-line",
         description:
           "",
         link: "#",
       },
       {
         title: "Automoation",
-        icon: "remixicon-image-line",
+        icon: "remixicon-bug-line",
         description:
           "",
         link: "#",
