@@ -147,6 +147,17 @@ class Careers extends Component {
         shift: "Morning",
         message: "Send your resume with job title as subject to hr@cot.com.pk",
       },
+      {
+        id: 1,
+        title: "No Openings at the moment",
+        experience: "2-3 years",
+        requirments:
+          "Aeque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur numquam tempora.",
+        location: "Karachi",
+        jobschedule: "Full-Time",
+        shift: "Morning",
+        message: "Send your resume with job title as subject to hr@cot.com.pk",
+      },
     ],
     responsive: {
       0: {
@@ -175,8 +186,8 @@ class Careers extends Component {
               description='A job at COT is a career made for you, by you'
             />
 
-            <div className='row mt-4'>
-              <OwlCarousel
+            <div className='flex flex-row justify-center items-center mt-4'>
+              {/* <OwlCarousel
                 className='owl-theme client-images text-center'
                 items={3}
                 loop={true}
@@ -196,16 +207,16 @@ class Careers extends Component {
                         alt='client'
                         className='img-fluid mx-auto d-block rounded-circle user-img'
                       /> */}
-                      <h2 className='text-dark mt-4 f-20 mb-0'>
+                      {/* <h2 className='text-dark mt-4 f-20 mb-0'>
                         {career.title}
                       </h2>
                       <p className='text-muted f-14'>{`Experience Required: ${career.experience}`}</p>
                       <p className='text-muted f-14'>{`Location: ${career.location}`}</p>
                       <p className='text-muted f-15 mt-3 mb-0'>
                         {`Shift: ${career.shift}`}
-                      </p>
+                      </p> */}
 
-                      <ModalCareer
+                      {/* <ModalCareer
                         buttonLabel='View Details'
                         title={career.title}
                         experience={career.experience}
@@ -214,18 +225,19 @@ class Careers extends Component {
                         requirments={career.requirments}
                         message={career.message}
                         className='modal-career'
-                      />
-                    </div>
-                  </div>
-                ))}
-                <div className='item'>
+                      /> */}
+                    {/* </div>
+                  </div> */}
+                {/* ))} */}
+              {/* </OwlCarousel>} */}
+              <div className='item'>
                     <div className='testi-content bg-white text-center m-3'>
                       <h2 className='text-dark mt-4 f-20 mb-0'>
-                        Didn't find what you were looking for?
+                        NO OPENINGS AT THE MOMENT
                       </h2>
-                      <p className='text-muted f-14'>`Didn't find an opening suited for you? send us your resume & we will get in touch as soon as we need someone someone with skills such as yours`</p>
+                      <p className='text-muted f-14'>`We are not currently looking to hire for any position. But we always welcome talent to apply for future openings in the organization.</p>
                       <p className='text-muted f-15 mt-3 mb-0'>
-                        hr@cot.com.pk
+                      You can send your resume at hr@cot.com.pk
                       </p>
 
                       {/* <ModalCareer
@@ -240,7 +252,6 @@ class Careers extends Component {
                       /> */}
                     </div>
                   </div>
-              </OwlCarousel>
             </div>
           </Container>
         </section>

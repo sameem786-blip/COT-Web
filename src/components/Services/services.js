@@ -12,7 +12,7 @@ class Services extends Component {
         title: "Web Development",
         icon: "remixicon-computer-line",
         description:
-          "Wordpress | PHP | MEARN | MERN",
+          "PHP | MEAN | MERN | Django | Wordpress",
         link: "#",
       },
       {
@@ -38,6 +38,13 @@ class Services extends Component {
       },
       {
         title: "Search Engine Optimization",
+        icon: "remixicon-image-line",
+        description:
+          "",
+        link: "#",
+      },
+      {
+        title: "Automoation",
         icon: "remixicon-image-line",
         description:
           "",
