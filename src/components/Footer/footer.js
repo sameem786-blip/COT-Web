@@ -51,8 +51,7 @@ class Footer extends Component {
                     <span className='text-purple'>T</span>omorrow
                   </h3>
                   <p className='mt-4 text-muted f-15'>
-                    Sed ut perspiciatis unde omnis iste a natus error scusantium
-                    doloremque rem explicabo.
+                    Taking The World To Future
                   </p>
                   <ul className='list-inline footer-icon mt-4'>
                     {this.state.socialIcons.map((item, key) => (
