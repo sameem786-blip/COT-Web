@@ -235,7 +235,7 @@ class Careers extends Component {
                       <h2 className='text-dark mt-4 f-20 mb-0'>
                         NO OPENINGS AT THE MOMENT
                       </h2>
-                      <p className='text-muted f-14'>`We are not currently looking to hire for any position. But we always welcome talent to apply for future openings in the organization.</p>
+                      <p className='text-muted f-14'>We are not currently looking to hire for any position. But we always welcome talent to apply for future openings in the organization.</p>
                       <p className='text-muted f-15 mt-3 mb-0'>
                       You can send your resume at hr@cot.com.pk
                       </p>
