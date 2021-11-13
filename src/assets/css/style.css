@@ -142,7 +142,7 @@ p {
 .navbar-light .navbar-nav li.active a,
 .navbar-light .navbar-nav li a:hover,
 .navbar-light .navbar-nav li a:active {
-  color: #0000ca !important;
+  color: #6298b9 !important;
 }
 
 .navbar-light .navbar-nav li.active a:after,
@@ -151,7 +151,7 @@ p {
   width: 100%;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
-  background-color: #0000ca;
+  background-color: #6298b9;
 }
 
 .nav-sticky.navbar-custom {
@@ -583,8 +583,8 @@ p {
 }
 
 .btn-purple {
-  background-color: #0000ca !important;
-  border: 1px solid #0000ca !important;
+  background-color: #001236 !important;
+  border: 1px solid #001236 !important;
   -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5) !important;
   color: #ffffff;
@@ -599,17 +599,17 @@ p {
 }
 
 .btn-outline-purple {
-  border: 1px solid #0000ca !important;
-  color: #0000ca;
+  border: 1px solid #001236 !important;
+  color: #6298b9;
 }
 
 .btn-outline-purple:hover,
 .btn-outline-purple:focus,
 .btn-outline-purple.active {
-  background-color: #0000ca !important;
-  border: 1px solid #0000ca !important;
-  -webkit-box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
-  box-shadow: 0 3px 10px rgba(109, 98, 253, 0.5);
+  background-color: #001236 !important;
+  border: 1px solid #6298b9 !important;
+  -webkit-box-shadow: 0 3px 10px #6298b9;
+  box-shadow: 0 3px 10px #6298b9;
   color: #ffffff;
 }
 
@@ -730,7 +730,7 @@ p {
 }
 
 .text-purple {
-  color: #0000ca !important;
+  color: #6298b9 !important;
 }
 
 .text-black {
@@ -798,10 +798,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000ca),
-    to(#483afc)
+    from(#001236),
+    to(#6298b9)
   );
-  background: linear-gradient(to right, #0000ca, #483afc);
+  background: linear-gradient(to right, #001236, #6298b9);
 }
 
 .section {
@@ -1246,10 +1246,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000ca),
-    to(#5a4efd)
+    from(#001236),
+    to(#6298b9)
   );
-  background: linear-gradient(to right, #0000ca, #5a4efd);
+  background: linear-gradient(to right, #001236, #6298b9);
 }
 
 .service-box:hover .service-icon,
@@ -1311,7 +1311,7 @@ p {
 }
 
 .testi-content:hover {
-  border-bottom: 2px solid #0000ca;
+  border-bottom: 2px solid #6298b9;
   -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
 }
@@ -1377,8 +1377,8 @@ p {
 }
 
 .pricing-box .pricing-icon {
-  -webkit-box-shadow: 0 0 30px 0px rgba(109, 98, 253, 0.12);
-  box-shadow: 0 0 30px 0px rgba(109, 98, 253, 0.12);
+  -webkit-box-shadow: 0 0 30px 0px #6298b9;
+  box-shadow: 0 0 30px 0px #6298b9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1391,10 +1391,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000ca),
-    to(#483afc)
+    from(#001236),
+    to(#6298b9)
   );
-  background: linear-gradient(to right, #0000ca, #483afc);
+  background: linear-gradient(to right, #001236, #6298b9);
   padding: 8px 4px 16px 4px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
@@ -1416,10 +1416,10 @@ p {
     linear,
     left top,
     right top,
-    from(#0000ca),
-    to(#483afc)
+    from(#001236),
+    to(#6298b9)
   ) !important;
-  background: linear-gradient(to right, #0000ca, #483afc) !important;
+  background: linear-gradient(to right, #001236, #6298b9) !important;
   color: #ffffff !important;
 }
 
