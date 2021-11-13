@@ -45,11 +45,7 @@ class Footer extends Component {
             <Row>
               <Col lg={5}>
                 <div className='footer-about-content mt-4'>
-                  <h3>
-                    <span className='text-purple'>C</span>omputing{" "}
-                    <span className='text-purple'>O</span>f{" "}
-                    <span className='text-purple'>T</span>omorrow
-                  </h3>
+                  <h3 className="text-purple">Computing Of Tomorrow</h3>
                   <p className='mt-4 text-muted f-15'>
                     Taking The World To Future
                   </p>
