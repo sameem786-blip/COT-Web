@@ -61,7 +61,7 @@ class Index1 extends Component {
 
         <Services />
 
-        <Portfolio />
+        {/* <Portfolio /> */}
 
         <Quote />
 

@@ -6,8 +6,8 @@ class ServiceBox extends Component {
     return (
       <React.Fragment>
         {this.props.services.map((service, key) => (
-          <div className='col-lg-4 col-md-6' key={key}>
-            <div className='service-box mt-4'>
+          <div className='col-lg-4 M-h col-md-6' key={key}>
+            <div className='service-box mt-4' style={{minHeight : "100%"}}>
               <i className={`${service.icon} text-purple h1 service-icon`} />
               <h5 className='text-dark font-weight-medium service-title mb-3 mt-5'>
                 {service.title}

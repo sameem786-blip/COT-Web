@@ -88,26 +88,27 @@ const ModalPortfolio = props => {
 class Portfolio extends Component {
   Projects = {
     details: [
-      {
-        id: 1,
-        icon: "remixicon-smartphone-line",
-        client: "COT project 1",
-        type: "Mobile Application",
-        url: "www.cot.com.pk",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-        bannerTop: banner1,
-      },
-      {
-        id: 2,
-        icon: "remixicon-computer-line",
-        client: "COT project 2",
-        type: "Web Application",
-        url: "www.cot.com.pk",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-        bannerTop: banner2,
-      },
+      // {
+      //   id: 1,
+      //   icon: "remixicon-smartphone-line",
+      //   client: "COT project 1",
+      //   type: "Mobile Application",
+      //   url: "www.cot.com.pk",
+      //   description:
+      //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      //   bannerTop: banner1,
+      // },
+      // {
+      //   id: 2,
+      //   icon: "remixicon-computer-line",
+      //   client: "COT project 2",
+      //   type: "Web Application",
+      //   url: "www.cot.com.pk",
+      //   description:
+      //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit rhoncus bibendum. Aliquam lorem urna, feugiat a faucibus in, luctus a magna. Vestibulum ornare pulvinar ex eget venenatis. Suspendisse bibendum eu purus ac dictum. Morbi pellentesque velit ac mi euismod, sed egestas ipsum mollis. Aenean scelerisque nec arcu at mollis. Donec ante ipsum, sollicitudin at magna non, lacinia finibus nisl. Fusce feugiat interdum odio nec suscipit. Curabitur dapibus elit vel eros elementum, at tristique ipsum dapibus. Proin semper sed lacus eget interdum. Pellentesque feugiat ornare efficitur. Aenean ultricies ligula non tortor pharetra, at tristique eros ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      //   bannerTop: banner2,
+      // },
+
     ],
   };
 
