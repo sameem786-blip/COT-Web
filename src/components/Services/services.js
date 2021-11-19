@@ -44,7 +44,7 @@ class Services extends Component {
         link: "#",
       },
       {
-        title: "Automoation",
+        title: "Automation",
         icon: "remixicon-bug-line",
         description:
           "",
